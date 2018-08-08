@@ -1,0 +1,11 @@
+{
+  "name": "bapa",
+  "version": "0.1.0",
+  "description": "cli for my music whatsapp group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andre Sion <caxvis@gmail.com>",
+  "license": "MIT"
+}
