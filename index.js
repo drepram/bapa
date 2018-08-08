@@ -1,36 +1,22 @@
 const fs = require('fs'),
       data = require('./data.json'),
-      print = console.log,
-      id = process.argv[2].split(','),
-      replace = process.argv[3];
+      print = console.log;
 
-const emojiList = `🐙 Filipi 4, Kolose 1-4 & 1 Tesalonika 1 - 2\n🦕 Efesus 3-6 dan Filipi 1-3`,
-newEmoji = `🦑 1 Tesalonika 3-5, 2 Tesalonika 1-3 & 1 Timotius 1`,
+const emojiList = `🦑 1 Tesalonika 3-5, 2 Tesalonika 1-3 & 1 Timotius 1\n🐙 Filipi 4, Kolose 1-4 & 1 Tesalonika 1 - 2\n🦕 Efesus 3-6 dan Filipi 1-3`,
+newEmoji = `🦐 1 Timotius 2-6 & 2 Timotius 1-2`,
 emojiLimit = `Filipi 3`,
 time = `23:38 WIB`,
-date = `Selasa, 7 Agustus 2018`,
+date = `Rabu, 8 Agustus 2018`,
 status = `FINAl`;
-
-function searchAndReplace(num, string) {
-  for (var i = 0; i < data.length; i++) {
-    if (data[i].num == num) {
-      data[i].emoji = string;
-    }
-  }
-}
-
-for (var i = 0; i < id.length; i++) {
-  searchAndReplace(id[i], replace)
-}
 
 let middleStr = "";
 for (var i = 0; i < data.length; i++) {
   middleStr += `${data[i].num}. ${data[i].name} ${data[i].emoji}\n`;
 }
 
-fs.writeFileSync('./data.json', JSON.stringify(data))
-
-print(`
+switch (process.argv[2]) {
+  case '-r':
+    print(`
 """REKAP ${status}"""
 
 ⏰: ${time}
@@ -60,4 +46,27 @@ Bagi rekan yg belum berganti stiker kami tunggu laporan pembacaannya ya.
 
 Terima kasih bagi Sobat-Sobat yang semangat dalam gerakan moral ini.
 
-Tuhan memberkati😇`)
+Tuhan memberkati😇`);
+    break;
+  case '-w':
+    const id = process.argv[3].split(','),
+    replace = process.argv[4];
+
+    for (var i = 0; i < id.length; i++) {
+      searchAndReplace(id[i], replace)
+    }
+
+    fs.writeFileSync('./data.json', JSON.stringify(data))
+    print('Succesfully written.')
+    break;
+  default:
+    print('give me an option smh')
+}
+
+function searchAndReplace(num, string) {
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].num == num) {
+      data[i].emoji = string;
+    }
+  }
+}
