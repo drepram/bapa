@@ -7,8 +7,8 @@ const fs = require('fs'),
 const emojiList = `🦑 1 Tesalonika 3-5, 2 Tesalonika 1-3 & 1 Timotius 1\n🐙 Filipi 4, Kolose 1-4 & 1 Tesalonika 1 - 2\n🦕 Efesus 3-6 dan Filipi 1-3`,
 newEmoji = `🦐 1 Timotius 2-6 & 2 Timotius 1-2`,
 emojiLimit = `Filipi 3`,
-time = `23:38 WIB`,
-date = `Rabu, 8 Agustus 2018`,
+time = `23:15 WIB`,
+date = `Kamis, 9 Agustus 2018`,
 status = `FINAl`;
 
 // Rewrite data from JSON properties into strings
@@ -20,8 +20,7 @@ for (var i = 0; i < data.length; i++) {
 // Decide whether to read or to write
 switch (process.argv[2]) {
   case '-r':
-    let finalStr = `
-"""REKAP ${status}"""
+    let finalStr = `"""REKAP ${status}"""
 
 ⏰: ${time}
 
@@ -55,8 +54,10 @@ Tuhan memberkati😇`
     print(finalStr);
 
     // Copy the string
-    clipboardy.writeSync(final);
+    clipboardy.writeSync(finalStr);
     clipboardy.readSync();
+
+    fs.writeFileSync('./texts/REKAP', finalStr)
     break;
   case '-w':
     // Listing all the person's emoji's that needs to be changed
