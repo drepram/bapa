@@ -3,6 +3,7 @@ const fs = require('fs'),
       data = require('./data.json'),
       print = console.log;
 
+// MODIFY THIS STRINGS
 const emojiList = `🦑 1 Tesalonika 3-5, 2 Tesalonika 1-3 & 1 Timotius 1\n🐙 Filipi 4, Kolose 1-4 & 1 Tesalonika 1 - 2\n🦕 Efesus 3-6 dan Filipi 1-3`,
 newEmoji = `🦐 1 Timotius 2-6 & 2 Timotius 1-2`,
 emojiLimit = `Filipi 3`,
@@ -10,11 +11,13 @@ time = `23:38 WIB`,
 date = `Rabu, 8 Agustus 2018`,
 status = `FINAl`;
 
+// Rewrite data from JSON properties into strings
 let middleStr = "";
 for (var i = 0; i < data.length; i++) {
   middleStr += `${data[i].num}. ${data[i].name} ${data[i].emoji}\n`;
 }
 
+// Decide whether to read or to write
 switch (process.argv[2]) {
   case '-r':
     let finalStr = `
@@ -51,28 +54,35 @@ Tuhan memberkati😇`
     
     print(finalStr);
 
+    // Copy the string
     clipboardy.writeSync(final);
     clipboardy.readSync();
     break;
   case '-w':
+    // Listing all the person's emoji's that needs to be changed
     const id = process.argv[3].split(','),
+    // Getting the replacement string
     replace = process.argv[4];
 
+    // Replacing the emojis one-by-one
     for (var i = 0; i < id.length; i++) {
       searchAndReplace(id[i], replace)
     }
 
+    // Updates the json files
     fs.writeFileSync('./data.json', JSON.stringify(data))
     print('Succesfully written.')
     break;
   default:
     print('give me an option smh')
+    // #nocommentsneeded
+    // yes, i'm that lame.
 }
 
-function searchAndReplace(num, string) {
+function searchAndReplace(personId, replacement) {
   for (var i = 0; i < data.length; i++) {
-    if (data[i].num == num) {
-      data[i].emoji = string;
+    if (data[i].num == personId) {
+      data[i].emoji = replacement;
     }
   }
 }
