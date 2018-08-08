@@ -21,10 +21,8 @@ function searchAndReplace(num, string) {
 
 for (var i = 0; i < id.length; i++) {
   searchAndReplace(id[i], replace)
-  // print(id[i])
 }
 
-// print(data)
 let middleStr = "";
 for (var i = 0; i < data.length; i++) {
   middleStr += `${data[i].num}. ${data[i].name} ${data[i].emoji}\n`;
