@@ -1,4 +1,5 @@
 const fs = require('fs'),
+      // clipboardy = require('clipboardy'),
       data = require('./data.json'),
       print = console.log;
 
@@ -16,7 +17,7 @@ for (var i = 0; i < data.length; i++) {
 
 switch (process.argv[2]) {
   case '-r':
-    print(`
+    let finalStr = `
 """REKAP ${status}"""
 
 ⏰: ${time}
@@ -46,7 +47,12 @@ Bagi rekan yg belum berganti stiker kami tunggu laporan pembacaannya ya.
 
 Terima kasih bagi Sobat-Sobat yang semangat dalam gerakan moral ini.
 
-Tuhan memberkati😇`);
+Tuhan memberkati😇`
+    
+    print(finalStr);
+
+    // clipboardy.writeSync(final);
+    // clipboardy.readSync();
     break;
   case '-w':
     const id = process.argv[3].split(','),
