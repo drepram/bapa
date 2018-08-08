@@ -4,7 +4,7 @@ const fs = require('fs'),
       id = process.argv[2].split(','),
       replace = process.argv[3];
 
-let emojiList = `🐙 Filipi 4, Kolose 1-4 & 1 Tesalonika 1 - 2\n🦕 Efesus 3-6 dan Filipi 1-3`
+const emojiList = `🐙 Filipi 4, Kolose 1-4 & 1 Tesalonika 1 - 2\n🦕 Efesus 3-6 dan Filipi 1-3`
 newEmoji = `🦑 1 Tesalonika 3-5, 2 Tesalonika 1-3 & 1 Timotius 1`,
 emojiLimit = `Filipi 3`,
 time = `23:38 WIB`,
