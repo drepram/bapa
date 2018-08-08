@@ -1,5 +1,5 @@
 const fs = require('fs'),
-      // clipboardy = require('clipboardy'),
+      clipboardy = require('clipboardy'),
       data = require('./data.json'),
       print = console.log;
 
@@ -51,8 +51,8 @@ Tuhan memberkati😇`
     
     print(finalStr);
 
-    // clipboardy.writeSync(final);
-    // clipboardy.readSync();
+    clipboardy.writeSync(final);
+    clipboardy.readSync();
     break;
   case '-w':
     const id = process.argv[3].split(','),
