@@ -4,12 +4,12 @@ const fs = require('fs'),
       print = console.log;
 
 // MODIFY THIS STRINGS
-const emojiList = `🦐 1 Timotius 2-6 & 2 Timotius 1-2\n🦑 1 Tesalonika 3-5, 2 Tesalonika 1-3 & 1 Timotius 1\n🐙 Filipi 4, Kolose 1-4 & 1 Tesalonika 1 - 2\n🦕 Efesus 3-6 dan Filipi 1-3`,
-newEmoji = `🦀 2 Timotius 3-4 & Titus 1-3 & Filemon 1 & Ibrani 1`,
+const emojiList = `🐡 Ibrani 2-8\n🦀 2 Timotius 3-4 & Titus 1-3 & Filemon 1 & Ibrani 1\n🦐 1 Timotius 2-6 & 2 Timotius 1-2\n🦑 1 Tesalonika 3-5, 2 Tesalonika 1-3 & 1 Timotius 1\n🐙 Filipi 4, Kolose 1-4 & 1 Tesalonika 1 - 2\n🦕 Efesus 3-6 dan Filipi 1-3`,
+newEmoji = `🐠 Ibrani 9-13 & Yakobus 1-2`,
 emojiLimit = `Filipi 3`,
-time = `10:11 WIB`,
-date = `Kamis, 9 Agustus 2018`,
-status = `SEMENTARA`;
+time = `22:30 WIB`,
+date = `Sabtu, 11 Agustus 2018`,
+status = `FINAL`;
 
 // Rewrite data from JSON properties into strings
 let middleStr = "";
