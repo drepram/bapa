@@ -50,8 +50,6 @@ Bagi rekan yg belum berganti stiker kami tunggu laporan pembacaannya ya.
 Terima kasih bagi Sobat-Sobat yang semangat dalam gerakan moral ini.
 
 Tuhan memberkati😇`
-    
-    print(finalStr);
 
     // Copy the string
     clipboardy.writeSync(finalStr);
