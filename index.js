@@ -9,7 +9,9 @@ newEmoji = `🐟 Yakobus 3-5 & 1 Petrus 1-4`,
 emojiLimit = `Filipi 3`,
 time = `23:44 WIB`,
 date = `Minggu, 12 Agustus 2018`,
-status = `FINAL`;
+status = `FINAL`,
+reminderText = `Yakobus 3-5 & 1 Petrus 1-4`,
+tommorow = `Jumat, 17 Agustus 2018`;
 
 // Rewrite data from JSON properties into strings
 let middleStr = "";
@@ -20,7 +22,7 @@ for (var i = 0; i < data.length; i++) {
 // Decide whether to read or to write
 switch (process.argv[2]) {
   case '-r':
-    let finalStr = `"""REKAP ${status}"""
+    let rekapStr = `"""REKAP ${status}"""
 
 ⏰: ${time}
 
@@ -52,10 +54,10 @@ Terima kasih bagi Sobat-Sobat yang semangat dalam gerakan moral ini.
 Tuhan memberkati😇`
 
     // Copy the string
-    clipboardy.writeSync(finalStr);
+    clipboardy.writeSync(rekapStr);
     clipboardy.readSync();
 
-    fs.writeFileSync('./texts/REKAP', finalStr)
+    fs.writeFileSync('./texts/REKAP', rekapStr)
     break;
   case '-w':
     // Listing all the person's emoji's that needs to be changed
@@ -72,6 +74,26 @@ Tuhan memberkati😇`
     fs.writeFileSync('./data.json', JSON.stringify(data))
     print('Succesfully written.')
     break;
+    case '-b':
+      let reminderStr = `Semangat baca ayat selanjutnya sobat💪
+
+Pasal:
+📖 ${reminderText}
+
+Tanggal & jam laporan:
+🗓 ${tommorow}
+⏰ 00.01 - 22.00 ⏰
+
+Tuhan Yesus Memberkati 😇`
+
+      // Copy the string
+      // clipboardy.writeSync(reminderStr);
+      // clipboardy.readSync();
+
+      print(reminderStr)
+
+      fs.writeFileSync('./texts/REKAP', reminderStr)
+      break;
   default:
     print('give me an option smh')
     // #nocommentsneeded
