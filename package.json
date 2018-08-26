@@ -1,7 +1,7 @@
 {
   "name": "bapa",
-  "version": "0.1.0",
-  "description": "cli for my music whatsapp group",
+  "version": "1.0.0",
+  "description": "an experiment on text parsing & whatsapp integration",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

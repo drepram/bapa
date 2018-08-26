@@ -1,6 +1,7 @@
 # bapa
 
 an experiment on text parsing & whatsapp integration
+version : 1.0.0
 
 # how 2 use
 
