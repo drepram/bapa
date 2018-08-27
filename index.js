@@ -5,9 +5,9 @@ const fs = require('fs'),
 
 // MODIFY THIS STRINGS
 const emoji = `✅ Matius 21-25`,
-time = `10:02 WIB`,
+time = `21:15 WIB`,
 date = `Senin, 27 Agustus 2018`,
-status = `SEMENTARA`,
+status = `FINAL`,
 reminderText = `Matius 26-28 & Markus 1-2`;
 
 // Rewrite data from JSON properties into strings
