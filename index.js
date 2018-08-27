@@ -56,8 +56,6 @@ Tuhan memberkati😇`
     // Copy the string
     clipboardy.writeSync(rekapStr);
     clipboardy.readSync();
-
-    fs.writeFileSync('./texts/REKAP', rekapStr)
     break;
   case '-w':
     // Listing all the person's emoji's that needs to be changed
