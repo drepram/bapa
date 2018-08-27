@@ -4,14 +4,11 @@ const fs = require('fs'),
       print = console.log;
 
 // MODIFY THIS STRINGS
-const emojiList = `🐠 Ibrani 9-13 & Yakobus 1-2\n🐡 Ibrani 2-8\n🦀 2 Timotius 3-4 & Titus 1-3 & Filemon 1 & Ibrani 1\n🦐 1 Timotius 2-6 & 2 Timotius 1-2\n🦑 1 Tesalonika 3-5, 2 Tesalonika 1-3 & 1 Timotius 1\n🐙 Filipi 4, Kolose 1-4 & 1 Tesalonika 1 - 2\n🦕 Efesus 3-6 dan Filipi 1-3`,
-newEmoji = `🐟 Yakobus 3-5 & 1 Petrus 1-4`,
-emojiLimit = `Filipi 3`,
-time = `23:44 WIB`,
-date = `Minggu, 12 Agustus 2018`,
-status = `FINAL`,
-reminderText = `Yakobus 3-5 & 1 Petrus 1-4`,
-tommorow = `Jumat, 17 Agustus 2018`;
+const emoji = `✅ Matius 21-25`,
+time = `10:02 WIB`,
+date = `Senin, 27 Agustus 2018`,
+status = `SEMENTARA`,
+reminderText = `Matius 26-28 & Markus 1-2`;
 
 // Rewrite data from JSON properties into strings
 let middleStr = "";
@@ -27,17 +24,22 @@ switch (process.argv[2]) {
 ⏰: ${time}
 
 🗓: ${date}
-📖: ${newEmoji}
+📖: ${emoji}
 
-Gerakan BAPA Putaran Ke-2
-Baca Alkitab (bersama) Pak Ahok
+*Gerakan BAPA Putaran Ke-3*
+*Baca Alkitab (bersama) Pak Ahok*
 
-Semangat mengejar pembacaan bagi Sobat BAPA yang masih berstiker :
-${emojiList}*
-
-Sobat BAPA yang sudah membaca: 
+Sobat BAPA yang sudah membaca 5 pasal hari ini: 
 
 ${middleStr}
+*Pasal yang BESOK akan kita baca:*
+📖 *${reminderText}*
+
+Cara melapor pembacaan: 
+(Nomor) (Nama) (Pasal yang telah selesai dibaca) 
+Contoh:
+2. Christie, Matius 1-5 
+
 Setelah membaca Firman Tuhan, biasakan berdoa, mengucap syukur dan memohon perlindungan Tuhan untuk
 1. Bangsa dan NKRI
 2. Keluarga dan orang terkasih kita
@@ -45,9 +47,7 @@ Setelah membaca Firman Tuhan, biasakan berdoa, mengucap syukur dan memohon perli
 
 NOTE:
 Tolong diperiksa.
-Bagi rekan yg belum berganti stiker kami tunggu laporan pembacaannya ya. 
-*Bagi yang belum mencapai pembacaan ${emojiLimit}, tidak akan admin absen semoga bisa cepat mengejar.
-
+Bagi rekan yg belum berganti stiker kami tunggu laporan pembacaannya ya. .
 
 Terima kasih bagi Sobat-Sobat yang semangat dalam gerakan moral ini.
 
@@ -62,8 +62,7 @@ Tuhan memberkati😇`
   case '-w':
     // Listing all the person's emoji's that needs to be changed
     const id = process.argv[3].split(','),
-    // Getting the replacement string
-    replace = process.argv[4];
+    replace = '✅';
 
     // Replacing the emojis one-by-one
     for (var i = 0; i < id.length; i++) {
@@ -74,26 +73,6 @@ Tuhan memberkati😇`
     fs.writeFileSync('./data.json', JSON.stringify(data))
     print('Succesfully written.')
     break;
-    case '-b':
-      let reminderStr = `Semangat baca ayat selanjutnya sobat💪
-
-Pasal:
-📖 ${reminderText}
-
-Tanggal & jam laporan:
-🗓 ${tommorow}
-⏰ 00.01 - 22.00 ⏰
-
-Tuhan Yesus Memberkati 😇`
-
-      // Copy the string
-      // clipboardy.writeSync(reminderStr);
-      // clipboardy.readSync();
-
-      print(reminderStr)
-
-      fs.writeFileSync('./texts/REKAP', reminderStr)
-      break;
   default:
     print('give me an option smh')
     // #nocommentsneeded
