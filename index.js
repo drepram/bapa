@@ -4,21 +4,21 @@ const fs = require('fs'),
       props = require('./json/props.json'),
       print = console.log;
 
-const emoji = props.emoji,
-time = props.time,
-date = props.date,
-status = props.status,
-reminderText = props.reminderText;
-
-// Rewrite data from JSON properties into strings
-let middleStr = "";
-for (var i = 0; i < data.length; i++) {
-  middleStr += `${data[i].num}. ${data[i].name} ${data[i].emoji}\n`;
-}
-
 // Decide whether to read or to write
 switch (process.argv[2]) {
   case '-r':
+    const emoji = props.emoji,
+    time = props.time,
+    date = props.date,
+    status = props.status,
+    reminderText = props.reminderText;
+    
+    // Rewrite data from JSON properties into strings
+    let middleStr = "";
+    for (var i = 0; i < data.length; i++) {
+      middleStr += `${data[i].num}. ${data[i].name} ${data[i].emoji}\n`;
+    }
+
     let rekapStr = `"""REKAP ${status}"""
 
 ⏰: ${time}
