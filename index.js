@@ -1,14 +1,14 @@
 const fs = require('fs'),
       clipboardy = require('clipboardy'),
-      data = require('./data.json'),
+      data = require('./json/data.json'),
+      props = require('./json/props.json'),
       print = console.log;
 
-// MODIFY THIS STRINGS
-const emoji = `✅ Matius 21-25`,
-time = `21:15 WIB`,
-date = `Senin, 27 Agustus 2018`,
-status = `FINAL`,
-reminderText = `Matius 26-28 & Markus 1-2`;
+const emoji = props.emoji,
+time = props.time,
+date = props.date,
+status = props.status,
+reminderText = props.reminderText;
 
 // Rewrite data from JSON properties into strings
 let middleStr = "";
@@ -24,7 +24,7 @@ switch (process.argv[2]) {
 ⏰: ${time}
 
 🗓: ${date}
-📖: ${emoji}
+📖: ✅ ${emoji}
 
 *Gerakan BAPA Putaran Ke-3*
 *Baca Alkitab (bersama) Pak Ahok*
