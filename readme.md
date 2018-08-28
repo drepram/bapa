@@ -12,12 +12,7 @@ node index.js -r
 
 writing :
 ```
-node index.js -w "59,41,56,1,2,3,38,57,52,30,25,13,53,10" 🦐
-```
-
-reminder text :
-```
-node index.js -b
+node index.js -w 1,2,3
 ```
 
 ## license
