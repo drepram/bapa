@@ -54,9 +54,10 @@ Terima kasih bagi Sobat-Sobat yang semangat dalam gerakan moral ini.
 Tuhan memberkati😇`
 
     // Copy the string
-    // clipboardy.writeSync(rekapStr);
-    // clipboardy.readSync();
-    print(rekapStr)
+    clipboardy.writeSync(rekapStr);
+    clipboardy.readSync();
+
+    print('Succesfully copied.')
     break;
   case '-w':
     // Listing all the person's emoji's that needs to be changed
@@ -73,13 +74,10 @@ Tuhan memberkati😇`
     print('Succesfully written.')
     break;
   case '-t':
-    // Replacing the emojis one-by-one
-    for (var i = 0; i < id.length; i++) {
-      searchAndReplace(id[i], "")
-    }
+    const plain = require('./json/plain.json')
 
-    // Updates the json files
-    print('Succesfully reset-ed.')
+    fs.writeFileSync('./json/data.json', JSON.stringify(plain))
+    print('Succesfully resetted.') // i don't know english that good ok
     break;
   default:
     print('give me an option smh')
