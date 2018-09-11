@@ -13,6 +13,11 @@ switch (process.argv[2]) {
     status = props.status,
     reminderText = props.reminderText;
     
+    const plain = require('./json/plain.json');
+
+    fs.writeFileSync('./json/data.json', JSON.stringify(plain))
+    print('Succesfully resetted.') // i don't know english that good ok
+
     // Rewrite data from JSON properties into strings
     let middleStr = "";
     for (var i = 0; i < data.length; i++) {
