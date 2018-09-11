@@ -9,6 +9,7 @@
   "author": "Andre Sion <caxvis@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "biblechapters": "^1.0.2",
     "clipboardy": "^1.2.3"
   }
 }
