@@ -2,6 +2,7 @@ const fs = require('fs'),
       clipboardy = require('clipboardy'),
       data = require('./json/data.json'),
       props = require('./json/props.json'),
+      chapters = require('biblechapters'),
       print = console.log;
 
 // Decide whether to read or to write
@@ -78,11 +79,10 @@ Tuhan memberkati😇`
     fs.writeFileSync('./json/data.json', JSON.stringify(data))
     print('Succesfully written.')
     break;
-  case '-t':
-    const plain = require('./json/plain.json')
+  case '-e':
+    chaptersList = chapters(String(process.argv[3]))
 
-    fs.writeFileSync('./json/data.json', JSON.stringify(plain))
-    print('Succesfully resetted.') // i don't know english that good ok
+    print(chaptersList)
     break;
   default:
     print('give me an option smh')
