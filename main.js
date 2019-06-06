@@ -51,6 +51,7 @@ let daftarPengikut = [
     {"nomorUrut":50, "pembaca":"Dedi L. Sihite", "apakahSudahMembaca":""},
     {"nomorUrut":51, "pembaca":"Eveline", "apakahSudahMembaca":""},
     {"nomorUrut":52, "pembaca":"Tonny / Akoe Tonsi", "apakahSudahMembaca":""},
+    {"nomorUrut":53, "pembaca":"Magdalena Y", "apakahSudahMembaca":""},
 ]
 
 function pelaksanaanPenyortiran() {
