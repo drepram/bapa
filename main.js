@@ -215,12 +215,12 @@ let daftarPengikut = [{
     },
     {
         "nomorUrut": 44,
-        "pembaca": "Irene F Mongkar - Tidak Diketahui",
+        "pembaca": "Irene F Mongkar - Tangerang",
         "apakahSudahMembaca": ""
     },
     {
         "nomorUrut": 45,
-        "pembaca": "Wilken Paskalis - Tidak Diketahui",
+        "pembaca": "Wilken Paskalis - Jakarta Utara",
         "apakahSudahMembaca": ""
     },
     {
