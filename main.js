@@ -1,89 +1,92 @@
-let data = [
-	{"num":1, "name":"Mercy Sihombing", "emoji":"✅"},
-    {"num":2, "name":"Christie Kirana", "emoji":"✅"},
-    {"num":3, "name":"drepram", "emoji":"✅"},
-    {"num":4, "name":"Kanti", "emoji":""},
-    {"num":5, "name":"Ronny Wisnhu", "emoji":""},
-    {"num":6, "name":"Siu Shia", "emoji":""},
-    {"num":7, "name":"Ronny Wisnhu", "emoji":""},
-    {"num":8, "name":"Ria Pendjol", "emoji":""},
-    {"num":9, "name":"Irina Pendjol", "emoji":""},
-    {"num":10, "name":"Lidya Eng", "emoji":""},
-    {"num":11, "name":"Magdalena Yuniarin", "emoji":""},
-    {"num":12, "name":"Ming Kolasa", "emoji":""},
-    {"num":13, "name":"Martha Tan", "emoji":""},
-    {"num":14, "name":"Maria Sie", "emoji":""},
-    {"num":15, "name":"Jenny Tambunan", "emoji":""},
-    {"num":16, "name":"Lisana Halim", "emoji":""},
-    {"num":17, "name":"Yohan", "emoji":""},
-    {"num":18, "name":"Lili Diana", "emoji":""},
-    {"num":19, "name":"Angel Ginelly", "emoji":""},
-    {"num":20, "name":"Lorentz Marpaung", "emoji":""},
-    {"num":21, "name":"Louise", "emoji":""},
-    {"num":22, "name":"Lasta", "emoji":""},
-    {"num":23, "name":"Regina", "emoji":""},
-    {"num":24, "name":"Irene Sirait", "emoji":""},
-    {"num":25, "name":"Cindra", "emoji":""},
-    {"num":26, "name":"Lily Mutiara", "emoji":""},
-    {"num":27, "name":"Lila", "emoji":""},
-    {"num":28, "name":"Hermanto R", "emoji":""},
-    {"num":29, "name":"Raymond", "emoji":""},
-    {"num":30, "name":"Yasama Halawa", "emoji":""},
-    {"num":31, "name":"Dame", "emoji":""},
-    {"num":32, "name":"Yunita Suyanto", "emoji":""},
-    {"num":33, "name":"Rusmida", "emoji":""},
-    {"num":34, "name":"Miming", "emoji":""},
-    {"num":35, "name":"Livia", "emoji":""},
-    {"num":36, "name":"Atik", "emoji":""},
-    {"num":37, "name":"Bukit", "emoji":""},
-    {"num":38, "name":"Sandra Ticoalu", "emoji":""},
-    {"num":39, "name":"Jenny", "emoji":""},
-    {"num":40, "name":"Elisabeth Eliviana Andrians", "emoji":""},
-    {"num":41, "name":"Sahadi Widjaja", "emoji":""},
-    {"num":42, "name":"Dewi", "emoji":""},
-    {"num":43, "name":"Anik", "emoji":""},
-    {"num":44, "name":"Nessy Napitupulu", "emoji":""},
-    {"num":45, "name":"Irene F Mongkar", "emoji":""},
-    {"num":46, "name":"Wilken Paskalis", "emoji":""},
-    {"num":47, "name":"Olyvia", "emoji":""},
-    {"num":48, "name":"Rusmia", "emoji":""},
+let daftarPengikut = [
+	{"nomorUrut":1, "pembaca":"Mercy Sihombing", "apakahSudahMembaca":"✅"},
+    {"nomorUrut":2, "pembaca":"Christie Kirana", "apakahSudahMembaca":"✅"},
+    {"nomorUrut":3, "pembaca":"drepram", "apakahSudahMembaca":"✅"},
+    {"nomorUrut":4, "pembaca":"Kanti", "apakahSudahMembaca":""},
+    {"nomorUrut":5, "pembaca":"Ronny Wisnhu", "apakahSudahMembaca":""},
+    {"nomorUrut":6, "pembaca":"Siu Shia", "apakahSudahMembaca":""},
+    {"nomorUrut":7, "pembaca":"Ronny Wisnhu", "apakahSudahMembaca":""},
+    {"nomorUrut":8, "pembaca":"Ria Pendjol", "apakahSudahMembaca":""},
+    {"nomorUrut":9, "pembaca":"Irina Pendjol", "apakahSudahMembaca":""},
+    {"nomorUrut":10, "pembaca":"Lidya Eng", "apakahSudahMembaca":""},
+    {"nomorUrut":11, "pembaca":"Magdalena Yuniarin", "apakahSudahMembaca":""},
+    {"nomorUrut":12, "pembaca":"Ming Kolasa", "apakahSudahMembaca":""},
+    {"nomorUrut":13, "pembaca":"Martha Tan", "apakahSudahMembaca":""},
+    {"nomorUrut":14, "pembaca":"Maria Sie", "apakahSudahMembaca":""},
+    {"nomorUrut":15, "pembaca":"Jenny Tambunan", "apakahSudahMembaca":""},
+    {"nomorUrut":16, "pembaca":"Lisana Halim", "apakahSudahMembaca":""},
+    {"nomorUrut":17, "pembaca":"Yohan", "apakahSudahMembaca":""},
+    {"nomorUrut":18, "pembaca":"Lili Diana", "apakahSudahMembaca":""},
+    {"nomorUrut":19, "pembaca":"Angel Ginelly", "apakahSudahMembaca":""},
+    {"nomorUrut":20, "pembaca":"Lorentz Marpaung", "apakahSudahMembaca":""},
+    {"nomorUrut":21, "pembaca":"Louise", "apakahSudahMembaca":""},
+    {"nomorUrut":22, "pembaca":"Lasta", "apakahSudahMembaca":""},
+    {"nomorUrut":23, "pembaca":"Regina", "apakahSudahMembaca":""},
+    {"nomorUrut":24, "pembaca":"Irene Sirait", "apakahSudahMembaca":""},
+    {"nomorUrut":25, "pembaca":"Cindra", "apakahSudahMembaca":""},
+    {"nomorUrut":26, "pembaca":"Lily Mutiara", "apakahSudahMembaca":""},
+    {"nomorUrut":27, "pembaca":"Lila", "apakahSudahMembaca":""},
+    {"nomorUrut":28, "pembaca":"Hermanto R", "apakahSudahMembaca":""},
+    {"nomorUrut":29, "pembaca":"Raymond", "apakahSudahMembaca":""},
+    {"nomorUrut":30, "pembaca":"Yasama Halawa", "apakahSudahMembaca":""},
+    {"nomorUrut":31, "pembaca":"Dame", "apakahSudahMembaca":""},
+    {"nomorUrut":32, "pembaca":"Yunita Suyanto", "apakahSudahMembaca":""},
+    {"nomorUrut":33, "pembaca":"Rusmida", "apakahSudahMembaca":""},
+    {"nomorUrut":34, "pembaca":"Miming", "apakahSudahMembaca":""},
+    {"nomorUrut":35, "pembaca":"Livia", "apakahSudahMembaca":""},
+    {"nomorUrut":36, "pembaca":"Atik", "apakahSudahMembaca":""},
+    {"nomorUrut":37, "pembaca":"Bukit", "apakahSudahMembaca":""},
+    {"nomorUrut":38, "pembaca":"Sandra Ticoalu", "apakahSudahMembaca":""},
+    {"nomorUrut":39, "pembaca":"Jenny", "apakahSudahMembaca":""},
+    {"nomorUrut":40, "pembaca":"Elisabeth Eliviana Andrians", "apakahSudahMembaca":""},
+    {"nomorUrut":41, "pembaca":"Sahadi Widjaja", "apakahSudahMembaca":""},
+    {"nomorUrut":42, "pembaca":"Dewi", "apakahSudahMembaca":""},
+    {"nomorUrut":43, "pembaca":"Anik", "apakahSudahMembaca":""},
+    {"nomorUrut":44, "pembaca":"Nessy Napitupulu", "apakahSudahMembaca":""},
+    {"nomorUrut":45, "pembaca":"Irene F Mongkar", "apakahSudahMembaca":""},
+    {"nomorUrut":46, "pembaca":"Wilken Paskalis", "apakahSudahMembaca":""},
+    {"nomorUrut":47, "pembaca":"Olyvia", "apakahSudahMembaca":""},
+    {"nomorUrut":48, "pembaca":"Rusmia", "apakahSudahMembaca":""},
+    {"nomorUrut":49, "pembaca":"Elisha", "apakahSudahMembaca":""},
+    {"nomorUrut":50, "pembaca":"Dedi L. Sihite", "apakahSudahMembaca":""},
+    {"nomorUrut":51, "pembaca":"Eveline", "apakahSudahMembaca":""},
+    {"nomorUrut":52, "pembaca":"Tonny / Akoe Tonsi", "apakahSudahMembaca":""},
 ]
 
-function sortNum() {
-	let numbers = document.getElementById('numberList').value;
-	let sorted = numbers.split(',').sort((a, b)=>{return a-b});
+function pelaksanaanPenyortiran() {
+    let pelaporHariIni = document.getElementById('daftarPembaca').value.split(',');
 
-	getParagraph(sorted)
-	getFullString()
+    tandaiPembaca(pelaporHariIni)
+    hasilkanParagrafRekap()
 }
 
-function getParagraph(id, replace = '✅') {
-	for (var i = 0; i < id.length; i++) {
-	  searchAndReplace(id[i], replace) // Replacing the emojis one-by-one
-	}
-}
-
-function searchAndReplace(personId, replacement) {
-  for (var i = 0; i < data.length; i++) {
-    if (data[i].num == personId) {
-      data[i].emoji = replacement;
+function tandaiPembaca(nomorNomorUrut, tandaPembacaan = '✅') {
+    for (var i = 0; i < nomorNomorUrut.length; i++) {
+        cariProfilPelapor(nomorNomorUrut[i], tandaPembacaan) // Memutasikan properti apakahSudahMembacas dengan tanda ✅
     }
-  }
 }
 
-function getFullString() {
-	let middleStr = "";
-	let ayat = document.getElementById('ayat').value;
-	let waktu = document.getElementById('waktu').value;
-	let tanggal = document.getElementById('tanggal').value;
-	let besok = document.getElementById('besok').value;
-	let status = document.getElementById('status').value;
+function cariProfilPelapor(nomorUrut, tandaPembacaan) {
+    for (var i = 0; i < daftarPengikut.length; i++) {
+        if (daftarPengikut[i].nomorUrut == nomorUrut) {
+            daftarPengikut[i].apakahSudahMembaca = tandaPembacaan;
+        }
+    }
+}
 
-	for (var i = 0; i < data.length; i++) {
-	  middleStr += `${data[i].num}. ${data[i].name} ${data[i].emoji}\n`;
-	}
+function hasilkanParagrafRekap() {
+    let middleString = "";
+    let ayat = document.getElementById('ayat').value;
+    let waktu = document.getElementById('waktu').value;
+    let tanggal = document.getElementById('tanggal').value;
+    let besok = document.getElementById('besok').value;
+    let status = document.getElementById('status').value;
 
-	let rekapStr = `"""REKAP ${status}"""
+    for (var i = 0; i < daftarPengikut.length; i++) {
+        middleString += `${daftarPengikut[i].nomorUrut}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}\n`;
+    }
+
+    let rekapStr = `"""REKAP ${status}"""
 
 ⏰: ${waktu} WIB
 
@@ -95,7 +98,7 @@ function getFullString() {
 
 Sobat BAPA yang sudah membaca 5 pasal hari ini: 
 
-${middleStr}
+${middleString}
 *Pasal yang BESOK akan kita baca:*
 📖 *${besok}*
 
@@ -117,78 +120,77 @@ Terima kasih bagi Sobat-Sobat yang semangat dalam gerakan moral ini.
 
 Tuhan memberkati😇`
 
-	document.getElementById('result').innerHTML = rekapStr;
+    document.getElementById('result').innerHTML = rekapStr;
 }
 
 function regexKalimat() {
-	let kalimat = document.getElementById('kalimat').value;
-	let setiapKalimat = kalimat.split(': ');
-	let regex = /^\d+/;
-	let arrKalimat = [];
-	let arrAngka = [];
+    let kalimat = document.getElementById('kalimat').value;
+    let setiapKalimat = kalimat.split(': ');
+    let regex = /^\d+/;
+    let kalimatKalimat = [];
+    let pembacaHariIni = [];
 
-	setiapKalimat.forEach(element => {
-		arrKalimat.push(element)
-	})
+    setiapKalimat.forEach(element => {
+        kalimatKalimat.push(element)
+    })
 
-	arrKalimat.shift()
+    kalimatKalimat.shift()
 
-	arrKalimat.forEach(element => {
-	    string = element.toString().split('\n')
-	    res = string[0].match(regex)
-	    if (res == null) {
-	    	console.log(string)
-	    	if (string.length > 2) {
-	    		if (string[1].split('.')[0] == 46) {
-	    			arrAngka.push(parseInt(string[1].split('.')[0]))
-	    		}
-	    		if (string[1].split('.')[0] == 42) {
-	    			arrAngka.push(parseInt(string[1].split('.')[0]))
-	    		}
-	    	}
-	        return false;
-	    } else {
-	        switch(res) {
-	            case '07':
-	                res[0] = parseInt('7')
-	                arrAngka.push(res[0])
-	            default:
-	                res[0] = parseInt(res[0])
-	                arrAngka.push(res[0])
-	        }
-	    }
-	})
+    kalimatKalimat.forEach(element => {
+        string = element.toString().split('\n')
+        res = string[0].match(regex)
+        if (res == null) {
+            console.log(string)
+            if (string.length > 2) {
+                if (string[1].split('.')[0] == 46) {
+                    pembacaHariIni.push(parseInt(string[1].split('.')[0]))
+                }
+                if (string[1].split('.')[0] == 42) {
+                    pembacaHariIni.push(parseInt(string[1].split('.')[0]))
+                }
+            }
+            return false;
+        } else {
+            switch (res) {
+                case '07':
+                    res[0] = parseInt('7')
+                    pembacaHariIni.push(res[0])
+                default:
+                    res[0] = parseInt(res[0])
+                    pembacaHariIni.push(res[0])
+            }
+        }
+    })
 
-	document.getElementById('numberList').value = arrAngka
-	document.getElementById('pelapor').innerHTML = `ID Pelapor Pembacaan - ${arrAngka.length}`
+    document.getElementById('daftarPembaca').value = pembacaHariIni
+    document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${pembacaHariIni.length}`
 
-	ambilWaktu()
+    dapatkanWaktu()
 }
 
-function ambilWaktu() {
-	let waktu = new Date(),
-	weekday = new Array(7),
-	monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"	],
-	jamDanMenit = waktu.toString().split(' ')[4].split(':').reverse();
+function dapatkanWaktu() {
+    let waktu = new Date();
+    let hariHari = new Array(7);
+    let bulanBulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+    let jamDanMenit = waktu.toString().split(' ')[4].split(':').reverse();
 
-	jamDanMenit.shift()
+    jamDanMenit.shift()
 
-	jamDanMenit = jamDanMenit.reverse().join(':');
+    jamDanMenit = jamDanMenit.reverse().join(':');
 
-	weekday[0] = "Minggu";
-	weekday[1] = "Senin";
-	weekday[2] = "Selasa";
-	weekday[3] = "Rabu";
-	weekday[4] = "Kamis";
-	weekday[5] = "Jumat";
-	weekday[6] = "Sabtu";
+    hariHari[0] = "Minggu";
+    hariHari[1] = "Senin";
+    hariHari[2] = "Selasa";
+    hariHari[3] = "Rabu";
+    hariHari[4] = "Kamis";
+    hariHari[5] = "Jumat";
+    hariHari[6] = "Sabtu";
 
-	let hari = weekday[waktu.getDay()],
-	tanggal = String(waktu.getDate()).padStart(2, '0'),
-	bulan = monthNames[waktu.getMonth()],
-	tahun = waktu.getFullYear();
+    let hari = hariHari[waktu.getDay()]; // Mengambil satu hari dari hari-hari
+    let tanggal = String(waktu.getDate())
+    let bulan = bulanBulan[waktu.getMonth()]; // Mengambil satu bulan dari bulan-bulan
+    let tahun = waktu.getFullYear();
 
-	document.getElementById('tanggal').value = `${hari}, ${tanggal} ${bulan} ${tahun}`
-	document.getElementById('waktu').value = `${jamDanMenit}`
+    document.getElementById('tanggal').value = `${hari}, ${tanggal} ${bulan} ${tahun}`
+    document.getElementById('waktu').value = `${jamDanMenit}`
 }
-
