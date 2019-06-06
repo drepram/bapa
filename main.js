@@ -50,14 +50,14 @@ let data = [
 ]
 
 function sortNum() {
-	let numbers = document.getElementById('numberList').value,
-	sorted = numbers.split(',').sort((a, b)=>{return a-b});
+	let numbers = document.getElementById('numberList').value;
+	let sorted = numbers.split(',').sort((a, b)=>{return a-b});
 
-	getRekapString(sorted)
+	getParagraph(sorted)
 	getFullString()
 }
 
-function getRekapString(id, replace = '✅') {
+function getParagraph(id, replace = '✅') {
 	for (var i = 0; i < id.length; i++) {
 	  searchAndReplace(id[i], replace) // Replacing the emojis one-by-one
 	}
@@ -72,12 +72,12 @@ function searchAndReplace(personId, replacement) {
 }
 
 function getFullString() {
-	let middleStr = "",
-	ayat = document.getElementById('ayat').value,
-	waktu = document.getElementById('waktu').value,
-	tanggal = document.getElementById('tanggal').value,
-	besok = document.getElementById('besok').value,
-	status = document.getElementById('status').value;
+	let middleStr = "";
+	let ayat = document.getElementById('ayat').value;
+	let waktu = document.getElementById('waktu').value;
+	let tanggal = document.getElementById('tanggal').value;
+	let besok = document.getElementById('besok').value;
+	let status = document.getElementById('status').value;
 
 	for (var i = 0; i < data.length; i++) {
 	  middleStr += `${data[i].num}. ${data[i].name} ${data[i].emoji}\n`;
@@ -121,11 +121,11 @@ Tuhan memberkati😇`
 }
 
 function regexKalimat() {
-	let kalimat = document.getElementById('kalimat').value,
-	setiapKalimat = kalimat.split(': '),
-	regex = /^\d+/,
-	arrKalimat = [],
-	arrAngka = [];
+	let kalimat = document.getElementById('kalimat').value;
+	let setiapKalimat = kalimat.split(': ');
+	let regex = /^\d+/;
+	let arrKalimat = [];
+	let arrAngka = [];
 
 	setiapKalimat.forEach(element => {
 		arrKalimat.push(element)
