@@ -314,11 +314,6 @@ let daftarPengikut = [{
         "apakahSudahMembaca": ""
     },
     {
-        "nomorUrut": 62,
-        "pembaca": "Rosdina Sipayung - Bekasi",
-        "apakahSudahMembaca": ""
-    },
-    {
         "nomorUrut": 63,
         "pembaca": "Indriana - Gombong",
         "apakahSudahMembaca": ""
