@@ -210,7 +210,7 @@ let daftarPengikut = [{
     },
     {
         "nomorUrut": 43,
-        "pembaca": "Nessy Napitupulu - Tidak Diketahui",
+        "pembaca": "Nessy Napitupulu - Jakarta",
         "apakahSudahMembaca": ""
     },
     {
@@ -276,6 +276,56 @@ let daftarPengikut = [{
     {
         "nomorUrut": 56,
         "pembaca": "Ellen Jacobs - Ambon",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 56,
+        "pembaca": "Esther Hastuti - Solo",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 57,
+        "pembaca": "Elizur Telaumbanua - Sampit",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 58,
+        "pembaca": "Febby Kekado - Jonggol",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 59,
+        "pembaca": "Maria Sie - Sidoarjo",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 60,
+        "pembaca": "Natalicia - Lido Bogor",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 61,
+        "pembaca": "Yusak Siswanto - Tangerang",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 62,
+        "pembaca": "Rosdina Sipayung - Bekasi",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 62,
+        "pembaca": "Rosdina Sipayung - Bekasi",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 63,
+        "pembaca": "Indriana - Gombong",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 64,
+        "pembaca": "_Kontak admin jika ingin ditambahkan_",
         "apakahSudahMembaca": ""
     },
 ]
