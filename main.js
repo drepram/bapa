@@ -325,7 +325,7 @@ let daftarPengikut = [{
     },
     {
         "nomorUrut": 66,
-        "pembaca": "_Kontak admin jika ingin ditambahkan_",
+        "pembaca": "Evi Silalahi - Depok",
         "apakahSudahMembaca": ""
     },
 ]
