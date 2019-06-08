@@ -279,47 +279,52 @@ let daftarPengikut = [{
         "apakahSudahMembaca": ""
     },
     {
-        "nomorUrut": 56,
+        "nomorUrut": 57,
         "pembaca": "Esther Hastuti - Solo",
         "apakahSudahMembaca": ""
     },
     {
-        "nomorUrut": 57,
+        "nomorUrut": 58,
         "pembaca": "Elizur Telaumbanua - Sampit",
         "apakahSudahMembaca": ""
     },
     {
-        "nomorUrut": 58,
+        "nomorUrut": 59,
         "pembaca": "Febby Kekado - Jonggol",
         "apakahSudahMembaca": ""
     },
     {
-        "nomorUrut": 59,
+        "nomorUrut": 60,
         "pembaca": "Maria Sie - Sidoarjo",
         "apakahSudahMembaca": ""
     },
     {
-        "nomorUrut": 60,
+        "nomorUrut": 61,
         "pembaca": "Natalicia - Lido Bogor",
         "apakahSudahMembaca": ""
     },
     {
-        "nomorUrut": 61,
+        "nomorUrut": 62,
         "pembaca": "Yusak Siswanto - Tangerang",
         "apakahSudahMembaca": ""
     },
     {
-        "nomorUrut": 62,
+        "nomorUrut": 63,
         "pembaca": "Rosdina Sipayung - Bekasi",
         "apakahSudahMembaca": ""
     },
     {
-        "nomorUrut": 63,
+        "nomorUrut": 64,
         "pembaca": "Indriana - Gombong",
         "apakahSudahMembaca": ""
     },
     {
-        "nomorUrut": 64,
+        "nomorUrut": 65,
+        "pembaca": "Jeanne Gunawan - Tangerang",
+        "apakahSudahMembaca": ""
+    },
+    {
+        "nomorUrut": 66,
         "pembaca": "_Kontak admin jika ingin ditambahkan_",
         "apakahSudahMembaca": ""
     },
