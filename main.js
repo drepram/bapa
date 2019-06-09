@@ -295,7 +295,7 @@ let daftarPengikut = [{
     },
     {
         "nomorUrut": 60,
-        "pembaca": "Maria Sie - Sidoarjo",
+        "pembaca": "Evi Silalahi - Depok",
         "apakahSudahMembaca": ""
     },
     {
@@ -321,11 +321,6 @@ let daftarPengikut = [{
     {
         "nomorUrut": 65,
         "pembaca": "Jeanne Gunawan - Tangerang",
-        "apakahSudahMembaca": ""
-    },
-    {
-        "nomorUrut": 66,
-        "pembaca": "Evi Silalahi - Depok",
         "apakahSudahMembaca": ""
     },
 ]
