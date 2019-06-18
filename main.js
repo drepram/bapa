@@ -340,7 +340,7 @@ function tandaiPembaca (nomorNomorUrut, tandaPembacaan = '✅') {
 
 function cariProfilPelapor (nomorUrut, tandaPembacaan) {
   for (var i = 0; i < daftarPengikut.length; i++) {
-    if (daftarPengikut[i].nomorUrut === nomorUrut) {
+    if (daftarPengikut[i].nomorUrut == nomorUrut) {
       daftarPengikut[i].apakahSudahMembaca = tandaPembacaan
     }
   }
@@ -418,10 +418,10 @@ function regexKalimat () {
     if (res === null) {
       console.log(string)
       if (string.length > 2) {
-        if (string[1].split('.')[0] === 46) {
+        if (string[1].split('.')[0] == 46) {
           pembacaHariIni.push(parseInt(string[1].split('.')[0]))
         }
-        if (string[1].split('.')[0] === 42) {
+        if (string[1].split('.')[0] == 42) {
           pembacaHariIni.push(parseInt(string[1].split('.')[0]))
         }
       }
