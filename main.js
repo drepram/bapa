@@ -485,7 +485,7 @@ function dapatkanWaktu () {
 
   jamDanMenit.pop() // Remove last index
 
-  jamDanMenit = jamDanMenit.reverse().join(':')
+  jamDanMenit = jamDanMenit.join(':')
 
   hariHari[0] = 'Minggu'
   hariHari[1] = 'Senin'
