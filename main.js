@@ -481,9 +481,9 @@ function dapatkanWaktu () {
   let waktu = new Date()
   let hariHari = new Array(7)
   let bulanBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
-  let jamDanMenit = waktu.toString().split(' ')[4].split(':').reverse()
+  let jamDanMenit = waktu.toString().split(' ')[4].split(':')
 
-  jamDanMenit.shift()
+  jamDanMenit.pop() // Remove last index
 
   jamDanMenit = jamDanMenit.reverse().join(':')
 
