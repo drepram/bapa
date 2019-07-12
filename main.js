@@ -505,19 +505,20 @@ function dapatkanWaktu () {
 }
 
 (function () {
-    function checkTime(i) {
-        return (i < 10) ? "0" + i : i;
+    function menambahkanAngkaKosong(i) {
+        return (i < 10) ? `0${i}` : i;
     }
 
-    function startTime() {
-        var today = new Date(),
-            h = checkTime(today.getHours()),
-            m = checkTime(today.getMinutes()),
-            s = checkTime(today.getSeconds());
-        document.querySelector('#waktuPadaSaatIni').innerHTML = h + ":" + m + ":" + s;
+    function waktuMulai() {
+        let waktu = new Date();
+        let jam = menambahkanAngkaKosong(waktu.getHours());
+        let menit = menambahkanAngkaKosong(waktu.getMinutes());
+        let detik = menambahkanAngkaKosong(waktu.getSeconds());
+
+        document.querySelector('#waktuPadaSaatIni').innerHTML = `${jam}:${menit}:${detik}`;
         t = setTimeout(function () {
-            startTime()
+            waktuMulai()
         }, 500);
     }
-    startTime();
+    waktuMulai();
 })();
