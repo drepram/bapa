@@ -325,6 +325,21 @@ let daftarPengikut = [{
 }
 ]
 
+let pasalHarian = {
+  '16-07-2019': 'Titus 1-3, Filemon 1, Ibrani 1',
+  '17-07-2019': 'Ibrani 1-6',
+  '18-07-2019': 'Ibrani 1-11',
+  '19-07-2019': 'Ibrani 1-13, Yakobus 1-3',
+  '20-07-2019': 'Yakobus 1-5, 1 Petrus 1-3',
+  '21-07-2019': '1 Petrus 1-5, 2 Petrus 1-3',
+  '22-07-2019': '1 Yohanes 1-5',
+  '23-07-2019': '2 Yohanes 1, 3 Yohanes 1, Yudas 1, Wahyu 1-2',
+  '24-07-2019': 'Wahyu 1-7',
+  '25-07-2019': 'Wahyu 1-12',
+  '26-07-2019': 'Wahyu 1-17',
+  '27-07-2019': 'Wahyu 1-22'
+}
+
 function pelaksanaanPenyortiran () {
   let pelaporHariIni = document.getElementById('daftarPembaca').value.split(',')
 
@@ -475,6 +490,7 @@ function regexKalimat () {
   document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${pembacaHariIni.length}`
 
   dapatkanWaktu()
+  dapatkanPasal()
 }
 
 function dapatkanWaktu () {
@@ -504,21 +520,32 @@ function dapatkanWaktu () {
   document.getElementById('waktu').value = `${jamDanMenit}`
 }
 
+function dapatkanPasal () {
+  let hariIni = moment().format('DD-MM-YYYY')
+  let hariBesok = moment().add(1, 'day').format('DD-MM-YYYY')
+
+  let pasalPadaHariIni = pasalHarian[hariIni]
+  let pasalPadaHariBesok = pasalHarian[hariBesok]
+
+  document.getElementById('ayat').value = `${pasalPadaHariIni}`
+  document.getElementById('besok').value = `${pasalPadaHariBesok}`
+}
+
 (function () {
-    function menambahkanAngkaKosong(i) {
-        return (i < 10) ? `0${i}` : i;
-    }
+  function menambahkanAngkaKosong (i) {
+    return (i < 10) ? `0${i}` : i
+  }
 
-    function waktuMulai() {
-        let waktu = new Date();
-        let jam = menambahkanAngkaKosong(waktu.getHours());
-        let menit = menambahkanAngkaKosong(waktu.getMinutes());
-        let detik = menambahkanAngkaKosong(waktu.getSeconds());
+  function waktuMulai () {
+    let waktu = new Date()
+    let jam = menambahkanAngkaKosong(waktu.getHours())
+    let menit = menambahkanAngkaKosong(waktu.getMinutes())
+    let detik = menambahkanAngkaKosong(waktu.getSeconds())
 
-        document.querySelector('#waktuPadaSaatIni').innerHTML = `${jam}:${menit}:${detik}`;
-        t = setTimeout(function () {
-            waktuMulai()
-        }, 500);
-    }
-    waktuMulai();
-})();
+    document.querySelector('#waktuPadaSaatIni').innerHTML = `${jam}:${menit}:${detik}`
+    t = setTimeout(function () {
+      waktuMulai()
+    }, 500)
+  }
+  waktuMulai()
+})()
