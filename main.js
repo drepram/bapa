@@ -527,6 +527,9 @@ let pasalHarian = {
 
 function pelaksanaanPenyortiran () {
   let pelaporHariIni = document.getElementById('daftarPembaca').value.split(',')
+  let banyakPembacaHariIni = document.getElementById('daftarPembaca').value.split(',').length
+
+  document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${banyakPembacaHariIni}`
 
   tandaiPembaca(pelaporHariIni)
   hasilkanParagrafRekap()
@@ -670,6 +673,28 @@ function regexKalimat () {
       }
     }
   })
+
+  document.getElementById('daftarPembaca').value = pembacaHariIni
+  document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${pembacaHariIni.length}`
+
+  dapatkanWaktu()
+  dapatkanPasal()
+}
+
+function ekstrakTeksSebelumnya () {
+  let teksSebelumnya = document.getElementById('kalimat-dulu').value
+  let pembacaHariIni = []
+
+  teksSebelumnya = teksSebelumnya.split('\n') // String diubah menjadi array, setiap ada baris baru, menjadi elemen baru di array
+  teksSebelumnya = teksSebelumnya.slice(12, 76) // Memotong teks sehingga hanya bagian Sobat Pembaca yang tersisa
+
+  teksSebelumnya.forEach((item, index) => {
+    if (item.split('✅').length == 2) {
+      pembacaHariIni.push(item.split('. ')[0])
+    }
+  })
+
+  pembacaHariIni.join(',') // Mengubah array menjadi string dengan tanda koma sebagai pemisah
 
   document.getElementById('daftarPembaca').value = pembacaHariIni
   document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${pembacaHariIni.length}`
