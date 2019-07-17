@@ -552,7 +552,7 @@ function cariProfilPelapor (nomorUrut, tandaPembacaan) {
 }
 
 function hasilkanParagrafRekap () {
-  let middleString = ''
+  let paragrafTengah = ''
   let ayat = document.getElementById('ayat').value
   let waktu = document.getElementById('waktu').value
   let tanggal = document.getElementById('tanggal').value
@@ -560,7 +560,7 @@ function hasilkanParagrafRekap () {
   let status = document.getElementById('status').value
 
   for (var i = 0; i < daftarPengikut.length; i++) {
-    middleString += `${daftarPengikut[i].nomorUrut}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}\n`
+    paragrafTengah += `${daftarPengikut[i].nomorUrut}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}\n`
   }
 
   let rekapStr = `"""REKAP ${status}"""
@@ -575,7 +575,7 @@ function hasilkanParagrafRekap () {
 
 Sobat BAPA yang sudah membaca 5 pasal hari ini: 
 
-${middleString}
+${paragrafTengah}
 *Pasal yang BESOK akan kita baca:*
 📖 *${besok}*
 
