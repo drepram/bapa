@@ -1,3 +1,5 @@
+window.jumlahPembaca = 0
+
 let daftarPengikut = [{
   'nomorUrut': 1,
   'pembaca': 'Mercy Sihombing - Jakarta',
@@ -674,8 +676,10 @@ function regexKalimat () {
     }
   })
 
-  document.getElementById('daftarPembaca').value = pembacaHariIni
-  document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${pembacaHariIni.length}`
+  window.jumlahPembaca += pembacaHariIni.length
+
+  document.getElementById('daftarPembaca').value += pembacaHariIni
+  document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${window.jumlahPembaca}`
 
   dapatkanWaktu()
   dapatkanPasal()
@@ -695,9 +699,10 @@ function ekstrakTeksSebelumnya () {
   })
 
   pembacaHariIni.join(',') // Mengubah array menjadi string dengan tanda koma sebagai pemisah
+  window.jumlahPembaca += pembacaHariIni.length
 
-  document.getElementById('daftarPembaca').value = pembacaHariIni
-  document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${pembacaHariIni.length}`
+  document.getElementById('daftarPembaca').value = `${pembacaHariIni},`
+  document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${window.jumlahPembaca}`
 
   dapatkanWaktu()
   dapatkanPasal()
