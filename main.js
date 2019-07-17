@@ -678,7 +678,7 @@ function regexKalimat () {
 
   window.jumlahPembaca += pembacaHariIni.length
 
-  document.getElementById('daftarPembaca').value += pembacaHariIni
+  document.getElementById('daftarPembaca').value += `${pembacaHariIni},`
   document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${window.jumlahPembaca}`
 
   dapatkanWaktu()
@@ -701,7 +701,7 @@ function ekstrakTeksSebelumnya () {
   pembacaHariIni.join(',') // Mengubah array menjadi string dengan tanda koma sebagai pemisah
   window.jumlahPembaca += pembacaHariIni.length
 
-  document.getElementById('daftarPembaca').value = `${pembacaHariIni},`
+  document.getElementById('daftarPembaca').value += `${pembacaHariIni},`
   document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${window.jumlahPembaca}`
 
   dapatkanWaktu()
