@@ -746,6 +746,17 @@ function dapatkanPasal () {
   document.getElementById('besok').value = `${pasalPadaHariBesok}`
 }
 
+function dapatkanPasalKemarin () {
+  let hariIni = moment().subtract(1, 'day').format('DD-MM-YYYY')
+  let hariBesok = moment().format('DD-MM-YYYY')
+
+  let pasalPadaHariIni = pasalHarian[hariIni]
+  let pasalPadaHariBesok = pasalHarian[hariBesok]
+
+  document.getElementById('ayat').value = `${pasalPadaHariIni}`
+  document.getElementById('besok').value = `${pasalPadaHariBesok}`
+}
+
 (function () {
   function menambahkanAngkaKosong (i) {
     return (i < 10) ? `0${i}` : i

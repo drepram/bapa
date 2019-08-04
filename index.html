@@ -32,19 +32,23 @@
                 placeholder="masukan teks REKAP sebelumnya disini"></textarea><br>
             <label class="label">
                 Teks WhatsApp
-                <button class="button is-dark is-small is-outlined is-pulled-right" onclick="regexKalimat()">RegEx
-                    Kalimat</button>
+                <button class="button is-dark is-small is-outlined is-pulled-right" 
+                        onclick="regexKalimat()">RegEx Kalimat</button>
             </label>
             <textarea class="textarea is-rounded" id="kalimat"
                 placeholder="open dev tools, sleep by 21:00"></textarea><br>
             <label class="label" id="pelapor">Nomor Urut Pelapor Pembacaan</label>
             <input class="input is-rounded" id="daftarPembaca" placeholder="42,49,69"><br><br>
-            <label class="label">Pasal Hari Ini</label>
+            <label class="label">
+                Pasal Hari Ini
+                <button class="button is-dark is-small is-outlined is-pulled-right" 
+                        onclick="dapatkanPasalKemarin()">Turunkan Pasal</button>
+            </label>
             <input class="input is-rounded" id="ayat" placeholder="Wahyu 1-5"><br><br>
             <label class="label">
                 Waktu Perekapan - <span id="waktuPadaSaatIni">00:00:00</span>
-                <button class="button is-dark is-small is-outlined is-pulled-right" onclick="dapatkanWaktu()">Ambil
-                    Waktu</button>
+                <button class="button is-dark is-small is-outlined is-pulled-right" 
+                        onclick="dapatkanWaktu()">Ambil Waktu</button>
             </label>
             <input class="input is-rounded" id="waktu" placeholder="04:20"><br><br>
             <label class="label">Hari Perekapan</label>
