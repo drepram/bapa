@@ -24,19 +24,24 @@
         </div><br><br>
         <div class="container">
             <label class="label">
-                Teks WhatsApp sebelumnya, <strong>TEKS REKAP TIDAK BOLEH TERPOTONG</strong>
-                <button class="button is-dark is-small is-outlined is-pulled-right"
-                    onclick="ekstrakTeksSebelumnya()">Ekstrak Kalimat</button>
-            </label>
-            <textarea class="textarea is-rounded" id="teks-rekap-sebelumnya"
-                placeholder="masukan teks REKAP sebelumnya disini"></textarea><br>
-            <label class="label">
                 Teks WhatsApp
                 <button class="button is-dark is-small is-outlined is-pulled-right" 
                         onclick="regexKalimat()">RegEx Kalimat</button>
             </label>
             <textarea class="textarea is-rounded" id="teks-rekap-sekarang"
-            placeholder="open dev tools, sleep by 21:00"></textarea>
+                placeholder="tidur sebelum 21:00"></textarea><br>
+            <label class="label">
+                Teks WhatsApp yang tidak terdeteksi
+            </label>
+            <textarea class="textarea is-rounded" id="teks-rekap-yang-tidak-terdeteksi"
+                placeholder="kalau ini kosong berarti semua orang melaporkan pembacaan dengan benar"></textarea><br>
+            <label class="label">
+                Teks WhatsApp sebelumnya, <strong>TEKS REKAP TIDAK BOLEH TERPOTONG</strong>
+                <button class="button is-dark is-small is-outlined is-pulled-right"
+                    onclick="ekstrakTeksSebelumnya()">Ekstrak Kalimat</button>
+            </label>
+            <textarea class="textarea is-rounded" id="teks-rekap-sebelumnya"
+                placeholder="masukan teks REKAP sebelumnya disini"></textarea>
             <br>
             <hr>
             <br>

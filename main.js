@@ -621,7 +621,7 @@ function regexKalimat () {
     let string = element.toString().split('\n')
     let res = string[0].match(regex)
     if (res === null) {
-      console.log(string)
+      document.querySelector('#teks-rekap-yang-tidak-terdeteksi').value += `${string}\n`
       if (string.length > 2) {
         if (string[1].split('.')[0] == 46) {
           pembacaHariIni.push(parseInt(string[1].split('.')[0]))
