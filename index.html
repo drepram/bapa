@@ -28,41 +28,41 @@
                 <button class="button is-dark is-small is-outlined is-pulled-right"
                     onclick="ekstrakTeksSebelumnya()">Ekstrak Kalimat</button>
             </label>
-            <textarea class="textarea is-rounded" id="kalimat-dulu"
+            <textarea class="textarea is-rounded" id="teks-rekap-sebelumnya"
                 placeholder="masukan teks REKAP sebelumnya disini"></textarea><br>
             <label class="label">
                 Teks WhatsApp
                 <button class="button is-dark is-small is-outlined is-pulled-right" 
                         onclick="regexKalimat()">RegEx Kalimat</button>
             </label>
-            <textarea class="textarea is-rounded" id="kalimat"
+            <textarea class="textarea is-rounded" id="teks-rekap-sekarang"
             placeholder="open dev tools, sleep by 21:00"></textarea>
             <br>
             <hr>
             <br>
             <label class="label" id="pelapor">Nomor Urut Pelapor Pembacaan</label>
-            <input class="input is-rounded" id="daftarPembaca" placeholder="42,49,69"><br><br>
+            <input class="input is-rounded" id="daftar-pembaca" placeholder="42,49,69"><br><br>
             <label class="label">
                 Pasal Hari Ini
                 <button class="button is-dark is-small is-outlined is-pulled-right" 
                         onclick="dapatkanPasalKemarin()">Turunkan Pasal</button>
             </label>
-            <input class="input is-rounded" id="ayat" placeholder="Wahyu 1-5"><br><br>
+            <input class="input is-rounded" id="pasal-hari-ini" placeholder="Wahyu 1-5"><br><br>
             <label class="label">
-                Waktu Perekapan - <span id="waktuPadaSaatIni">00:00:00</span>
+                Waktu Perekapan - <span id="waktu-pada-saat-ini">00:00:00</span>
                 <button class="button is-dark is-small is-outlined is-pulled-right" 
                         onclick="dapatkanWaktu()">Ambil Waktu</button>
             </label>
-            <input class="input is-rounded" id="waktu" placeholder="04:20"><br><br>
+            <input class="input is-rounded" id="waktu-jam-menit" placeholder="04:20"><br><br>
             <label class="label">Hari Perekapan</label>
-            <input class="input is-rounded" id="tanggal" placeholder="Rabu, 10 April 2019"><br><br>
+            <input class="input is-rounded" id="waktu-hari-tanggal" placeholder="Rabu, 10 April 2019"><br><br>
             <label class="label">Pasal Hari Esok</label>
-            <input class="input is-rounded" id="besok" placeholder="Kejadian 1-5"><br><br>
+            <input class="input is-rounded" id="pasal-untuk-besok" placeholder="Kejadian 1-5"><br><br>
             <div class="field">
                 <label class="label">Status Rekap</label>
                 <div class="control">
                     <div class="select" style="width:100%">
-                        <select id="status" style="width:100%">
+                        <select id="status-rekap" style="width:100%">
                             <option value="FINAL">FINAL</option>
                             <option value="SEMENTARA">SEMENTARA</option>
                         </select>
@@ -74,7 +74,7 @@
                 class="button is-medium is-success is-rounded is-fullwidth">Lakukan Penyortiran</button>
             <br>
             <br>
-            <pre id="result">
+            <pre id="hasil-rekap">
 
 			</pre>
         </div>

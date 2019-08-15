@@ -528,10 +528,10 @@ let pasalHarian = {
 }
 
 function pelaksanaanPenyortiran () {
-  let pelaporHariIni = document.getElementById('daftarPembaca').value.split(',')
-  let banyakPembacaHariIni = document.getElementById('daftarPembaca').value.split(',').length
+  let pelaporHariIni = document.querySelector('#daftar-pembaca').value.split(',')
+  let banyakPembacaHariIni = document.querySelector('#daftar-pembaca').value.split(',').length
 
-  document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${banyakPembacaHariIni}`
+  document.querySelector('#pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${banyakPembacaHariIni}`
 
   tandaiPembaca(pelaporHariIni)
   hasilkanParagrafRekap()
@@ -553,11 +553,11 @@ function cariProfilPelapor (nomorUrut, tandaPembacaan) {
 
 function hasilkanParagrafRekap () {
   let paragrafTengah = ''
-  let ayat = document.getElementById('ayat').value
-  let waktu = document.getElementById('waktu').value
-  let tanggal = document.getElementById('tanggal').value
-  let besok = document.getElementById('besok').value
-  let status = document.getElementById('status').value
+  let ayat = document.querySelector('#pasal-hari-ini').value
+  let waktu = document.querySelector('#waktu-jam-menit').value
+  let tanggal = document.querySelector('#waktu-hari-tanggal').value
+  let besok = document.querySelector('#pasal-untuk-besok').value
+  let status = document.querySelector('#status-rekap').value
 
   for (var i = 0; i < daftarPengikut.length; i++) {
     paragrafTengah += `${daftarPengikut[i].nomorUrut}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}\n`
@@ -601,11 +601,11 @@ Terima kasih bagi Sobat-Sobat yang terus semangat dalam gerakan moral ini.
 
 Tuhan memberkati😇`
 
-  document.getElementById('result').innerHTML = rekapStr
+  document.querySelector('#hasil-rekap').innerHTML = rekapStr
 }
 
 function regexKalimat () {
-  let kalimat = document.getElementById('kalimat').value
+  let kalimat = document.querySelector('#teks-rekap-sekarang').value
   let setiapKalimat = kalimat.split(': ')
   let regex = /^\d+/
   let kalimatKalimat = []
@@ -678,15 +678,15 @@ function regexKalimat () {
 
   window.jumlahPembaca += pembacaHariIni.length
 
-  document.getElementById('daftarPembaca').value += `${pembacaHariIni},`
-  document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${window.jumlahPembaca}`
+  document.querySelector('#daftar-pembaca').value += `${pembacaHariIni},`
+  document.querySelector('#pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${window.jumlahPembaca}`
 
   dapatkanWaktu()
   dapatkanPasal()
 }
 
 function ekstrakTeksSebelumnya () {
-  let teksSebelumnya = document.getElementById('kalimat-dulu').value
+  let teksSebelumnya = document.querySelector('#teks-rekap-sebelumnya').value
   let pembacaHariIni = []
 
   teksSebelumnya = teksSebelumnya.split('\n') // String diubah menjadi array, setiap ada baris baru, menjadi elemen baru di array
@@ -701,8 +701,8 @@ function ekstrakTeksSebelumnya () {
   pembacaHariIni.join(',') // Mengubah array menjadi string dengan tanda koma sebagai pemisah
   window.jumlahPembaca += pembacaHariIni.length
 
-  document.getElementById('daftarPembaca').value += `${pembacaHariIni},`
-  document.getElementById('pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${window.jumlahPembaca}`
+  document.querySelector('#daftar-pembaca').value += `${pembacaHariIni},`
+  document.querySelector('#pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${window.jumlahPembaca}`
 
   dapatkanWaktu()
   dapatkanPasal()
@@ -731,8 +731,8 @@ function dapatkanWaktu () {
   let bulan = bulanBulan[waktu.getMonth()] // Mengambil satu bulan dari bulan-bulan
   let tahun = waktu.getFullYear()
 
-  document.getElementById('tanggal').value = `${hari}, ${tanggal} ${bulan} ${tahun}`
-  document.getElementById('waktu').value = `${jamDanMenit}`
+  document.querySelector('#waktu-hari-tanggal').value = `${hari}, ${tanggal} ${bulan} ${tahun}`
+  document.querySelector('#waktu-jam-menit').value = `${jamDanMenit}`
 }
 
 function dapatkanPasal () {
@@ -742,8 +742,8 @@ function dapatkanPasal () {
   let pasalPadaHariIni = pasalHarian[hariIni]
   let pasalPadaHariBesok = pasalHarian[hariBesok]
 
-  document.getElementById('ayat').value = `${pasalPadaHariIni}`
-  document.getElementById('besok').value = `${pasalPadaHariBesok}`
+  document.querySelector('#pasal-hari-ini').value = `${pasalPadaHariIni}`
+  document.querySelector('#pasal-untuk-besok').value = `${pasalPadaHariBesok}`
 }
 
 function dapatkanPasalKemarin () {
@@ -753,8 +753,8 @@ function dapatkanPasalKemarin () {
   let pasalPadaHariIni = pasalHarian[hariIni]
   let pasalPadaHariBesok = pasalHarian[hariBesok]
 
-  document.getElementById('ayat').value = `${pasalPadaHariIni}`
-  document.getElementById('besok').value = `${pasalPadaHariBesok}`
+  document.querySelector('#pasal-hari-ini').value = `${pasalPadaHariIni}`
+  document.querySelector('#pasal-untuk-besok').value = `${pasalPadaHariBesok}`
 }
 
 (function () {
@@ -768,7 +768,7 @@ function dapatkanPasalKemarin () {
     let menit = menambahkanAngkaKosong(waktu.getMinutes())
     let detik = menambahkanAngkaKosong(waktu.getSeconds())
 
-    document.querySelector('#waktuPadaSaatIni').innerHTML = `${jam}:${menit}:${detik}`
+    document.querySelector('#waktu-pada-saat-ini').innerHTML = `${jam}:${menit}:${detik}`
     let timer = setTimeout(function () {
       waktuMulai()
     }, 500)
