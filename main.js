@@ -712,7 +712,7 @@ function dapatkanWaktu () {
   let waktu = new Date()
   let hariHari = new Array(7)
   let bulanBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
-  let jamDanMenit = moment().add(1, 'minute').format('HH:mm');
+  let jamDanMenit = moment().add(1, 'minute').format('HH:mm')
 
   hariHari[0] = 'Minggu'
   hariHari[1] = 'Senin'
