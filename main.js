@@ -7,12 +7,12 @@ let daftarPengikut = [{
 },
 {
   'nomorUrut': 2,
-  'pembaca': 'Christie Kirana - Jakarta',
+  'pembaca': 'Christie Kirana - Beijing RRT',
   'apakahSudahMembaca': '✅'
 },
 {
   'nomorUrut': 3,
-  'pembaca': 'drepram - Jakarta',
+  'pembaca': 'Andre Pramaditya - Jakarta',
   'apakahSudahMembaca': '✅'
 },
 {
