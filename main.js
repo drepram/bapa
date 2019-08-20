@@ -528,8 +528,8 @@ let pasalHarian = {
 }
 
 function pelaksanaanPenyortiran () {
-    dapatkanWaktu()
-    
+  dapatkanWaktu()
+
   let pelaporHariIni = document.querySelector('#daftar-pembaca').value.split(',')
   let banyakPembacaHariIni = document.querySelector('#daftar-pembaca').value.split(',').length
 
