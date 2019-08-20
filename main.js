@@ -528,6 +528,8 @@ let pasalHarian = {
 }
 
 function pelaksanaanPenyortiran () {
+    dapatkanWaktu()
+    
   let pelaporHariIni = document.querySelector('#daftar-pembaca').value.split(',')
   let banyakPembacaHariIni = document.querySelector('#daftar-pembaca').value.split(',').length
 
@@ -683,6 +685,7 @@ function regexKalimat () {
 
   dapatkanWaktu()
   dapatkanPasal()
+  pelaksanaanPenyortiran()
 }
 
 function ekstrakTeksSebelumnya () {
