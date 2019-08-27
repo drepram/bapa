@@ -562,7 +562,7 @@ function hasilkanParagrafRekap () {
   let status = document.querySelector('#status-rekap').value
 
   for (var i = 0; i < daftarPengikut.length; i++) {
-    paragrafTengah += `${daftarPengikut[i].nomorUrut}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}\n`
+    paragrafTengah += ((i+1) !== daftarPengikut.length) ? `${daftarPengikut[i].nomorUrut}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}\n` : `${daftarPengikut[i].nomorUrut}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}`
   }
 
   let rekapStr = `"""REKAP ${status}"""
@@ -576,8 +576,9 @@ function hasilkanParagrafRekap () {
 *Baca Alkitab (bersama) Tuhan Yesus Kristus*
 
 Sobat BAPA yang sudah membaca 5 pasal hari ini: 
-
+${'```'}
 ${paragrafTengah}
+${'```'}
 *Pasal yang BESOK akan kita baca:*
 📖 *${besok}*
 
