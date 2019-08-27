@@ -694,7 +694,7 @@ function ekstrakTeksSebelumnya () {
   let pembacaHariIni = []
 
   teksSebelumnya = teksSebelumnya.split('\n') // String diubah menjadi array, setiap ada baris baru, menjadi elemen baru di array
-  teksSebelumnya = teksSebelumnya.slice(12, 76) // Memotong teks sehingga hanya bagian Sobat Pembaca yang tersisa
+  teksSebelumnya = teksSebelumnya.slice(12, 77) // Memotong teks sehingga hanya bagian Sobat Pembaca yang tersisa
 
   teksSebelumnya.forEach((item, index) => {
     if (item.split('✅').length == 2) {
