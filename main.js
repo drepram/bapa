@@ -716,7 +716,7 @@ function dapatkanWaktu () {
   let waktu = new Date()
   let hariHari = new Array(7)
   let bulanBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
-  let jamDanMenit = moment().add(1, 'minute').format('HH:mm')
+  let jamDanMenit = moment().tz('Asia/Jakarta').add(1, 'minute').format('HH:mm')
 
   hariHari[0] = 'Minggu'
   hariHari[1] = 'Senin'
@@ -736,8 +736,8 @@ function dapatkanWaktu () {
 }
 
 function dapatkanPasal () {
-  let hariIni = moment().format('DD-MM-YYYY')
-  let hariBesok = moment().add(1, 'day').format('DD-MM-YYYY')
+  let hariIni = moment().tz('Asia/Jakarta').format('DD-MM-YYYY')
+  let hariBesok = moment().tz('Asia/Jakarta').add(1, 'day').format('DD-MM-YYYY')
 
   let pasalPadaHariIni = pasalHarian[hariIni]
   let pasalPadaHariBesok = pasalHarian[hariBesok]
@@ -747,8 +747,8 @@ function dapatkanPasal () {
 }
 
 function dapatkanPasalKemarin () {
-  let hariIni = moment().subtract(1, 'day').format('DD-MM-YYYY')
-  let hariBesok = moment().format('DD-MM-YYYY')
+  let hariIni = moment().tz('Asia/Jakarta').subtract(1, 'day').format('DD-MM-YYYY')
+  let hariBesok = moment().tz('Asia/Jakarta').format('DD-MM-YYYY')
 
   let pasalPadaHariIni = pasalHarian[hariIni]
   let pasalPadaHariBesok = pasalHarian[hariBesok]
