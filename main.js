@@ -533,6 +533,12 @@ let pasalHarian = {
   '29-01-2020': 'Maleakhi 1-4'
 }
 
+window.addEventListener('load', function () {
+  UpUp.start({
+    'content': '🌐🚫'
+  });
+})
+
 function pelaksanaanPenyortiran () {
   dapatkanWaktu()
 

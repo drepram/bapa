@@ -1,6 +1,8 @@
 {
     "name": "BAPA",
     "short_name": "BAPA",
+    "start_url": "index.html",
+    "scope" : "./",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
