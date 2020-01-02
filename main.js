@@ -540,8 +540,6 @@ window.addEventListener('load', function () {
 })
 
 function pelaksanaanPenyortiran () {
-  dapatkanWaktu()
-
   let pelaporHariIni = document.querySelector('#daftar-pembaca').value.split(',')
   let banyakPembacaHariIni = document.querySelector('#daftar-pembaca').value.split(',').length
 
@@ -758,6 +756,29 @@ function dapatkanPasal () {
   document.querySelector('#pasal-untuk-besok').value = `${pasalPadaHariBesok}`
 }
 
+function dapatkanHariKemarin () {
+  let waktu = new Date()
+  let hariHari = new Array(7)
+  let bulanBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
+  let jamDanMenit = moment().tz('Asia/Jakarta').add(1, 'minute').format('HH:mm')
+
+  hariHari[0] = 'Minggu'
+  hariHari[1] = 'Senin'
+  hariHari[2] = 'Selasa'
+  hariHari[3] = 'Rabu'
+  hariHari[4] = 'Kamis'
+  hariHari[5] = 'Jumat'
+  hariHari[6] = 'Sabtu'
+
+  let hari = hariHari[waktu.getDay() - 1] // Mengambil satu hari dari hari-hari
+  let tanggal = String(waktu.getDate() - 1)
+  let bulan = bulanBulan[waktu.getMonth()] // Mengambil satu bulan dari bulan-bulan
+  let tahun = waktu.getFullYear()
+
+  document.querySelector('#waktu-hari-tanggal').value = `${hari}, ${tanggal} ${bulan} ${tahun}`
+  document.querySelector('#waktu-jam-menit').value = `${jamDanMenit}`
+}
+
 function dapatkanPasalKemarin () {
   let hariIni = moment().tz('Asia/Jakarta').subtract(1, 'day').format('DD-MM-YYYY')
   let hariBesok = moment().tz('Asia/Jakarta').format('DD-MM-YYYY')
@@ -765,6 +786,7 @@ function dapatkanPasalKemarin () {
   let pasalPadaHariIni = pasalHarian[hariIni]
   let pasalPadaHariBesok = pasalHarian[hariBesok]
 
+  dapatkanHariKemarin()
   document.querySelector('#pasal-hari-ini').value = `${pasalPadaHariIni}`
   document.querySelector('#pasal-untuk-besok').value = `${pasalPadaHariBesok}`
 }
