@@ -760,7 +760,7 @@ function dapatkanHariKemarin () {
   let waktu = new Date()
   let hariHari = new Array(7)
   let bulanBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
-  let jamDanMenit = moment().tz('Asia/Jakarta').add(1, 'minute').format('HH:mm')
+  let jamDanMenit = '23:59';
 
   hariHari[0] = 'Minggu'
   hariHari[1] = 'Senin'
@@ -770,8 +770,8 @@ function dapatkanHariKemarin () {
   hariHari[5] = 'Jumat'
   hariHari[6] = 'Sabtu'
 
-  let hari = hariHari[waktu.getDay() - 1] // Mengambil satu hari dari hari-hari
-  let tanggal = String(waktu.getDate() - 1)
+  let hari = hariHari[waktu.getDay() == 0 ? 6 : waktu.getDay() - 1] // Mengambil satu hari dari hari-hari, jika index di array hariHari adalah 0, kembalikan ke index 6 karena 0-1 = undefined
+  let tanggal = moment().tz('Asia/Jakarta').subtract(1, 'day').format('D')
   let bulan = bulanBulan[waktu.getMonth()] // Mengambil satu bulan dari bulan-bulan
   let tahun = waktu.getFullYear()
 
