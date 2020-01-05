@@ -329,6 +329,11 @@ let daftarPengikut = [{
   'nomorUrut': 66,
   'pembaca': 'Corrie - Gombong',
   'apakahSudahMembaca': ''
+},
+{
+  'nomorUrut': 67,
+  'pembaca': 'Yoel - Gombong',
+  'apakahSudahMembaca': ''
 }
 ]
 
