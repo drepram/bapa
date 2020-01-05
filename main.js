@@ -699,8 +699,11 @@ function regexKalimat () {
   document.querySelector('#daftar-pembaca').value += `${pembacaHariIni},`
   document.querySelector('#pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${window.jumlahPembaca}`
 
-  dapatkanWaktu()
-  dapatkanPasal()
+  // Jika zona waktu di Jakarta masih subuh (kurang dari jam 9 pagi)
+  // akan secara otomatis mengambil hari kemarin sebagai waktu
+  if (moment().tz('Asia/Jakarta').format('h') < 9) dapatkanPasalKemarin()
+  else dapatkanPasal()
+
   pelaksanaanPenyortiran()
 }
 
@@ -723,8 +726,12 @@ function ekstrakTeksSebelumnya () {
   document.querySelector('#daftar-pembaca').value += `${pembacaHariIni},`
   document.querySelector('#pelapor').innerHTML = `Banyak Pelapor Hari Ini - ${window.jumlahPembaca}`
 
-  dapatkanWaktu()
-  dapatkanPasal()
+  // Jika zona waktu di Jakarta masih subuh (kurang dari jam 9 pagi)
+  // akan secara otomatis mengambil hari kemarin sebagai waktu
+  if (moment().tz('Asia/Jakarta').format('h') < 9) dapatkanPasalKemarin()
+  else dapatkanPasal()
+
+  pelaksanaanPenyortiran()
 }
 
 function dapatkanWaktu () {
@@ -757,6 +764,7 @@ function dapatkanPasal () {
   let pasalPadaHariIni = pasalHarian[hariIni]
   let pasalPadaHariBesok = pasalHarian[hariBesok]
 
+  dapatkanWaktu()
   document.querySelector('#pasal-hari-ini').value = `${pasalPadaHariIni}`
   document.querySelector('#pasal-untuk-besok').value = `${pasalPadaHariBesok}`
 }
