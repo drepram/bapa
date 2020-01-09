@@ -701,7 +701,7 @@ function regexKalimat () {
 
   // Jika zona waktu di Jakarta masih subuh (kurang dari jam 9 pagi)
   // akan secara otomatis mengambil hari kemarin sebagai waktu
-  if (moment().tz('Asia/Jakarta').format('h') < 9) dapatkanPasalKemarin()
+  if (moment().tz('Asia/Jakarta').format('H') < 9) dapatkanPasalKemarin()
   else dapatkanPasal()
 
   pelaksanaanPenyortiran()
@@ -728,7 +728,7 @@ function ekstrakTeksSebelumnya () {
 
   // Jika zona waktu di Jakarta masih subuh (kurang dari jam 9 pagi)
   // akan secara otomatis mengambil hari kemarin sebagai waktu
-  if (moment().tz('Asia/Jakarta').format('h') < 9) dapatkanPasalKemarin()
+  if (moment().tz('Asia/Jakarta').format('H') < 9) dapatkanPasalKemarin()
   else dapatkanPasal()
 
   pelaksanaanPenyortiran()
