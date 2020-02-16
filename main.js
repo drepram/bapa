@@ -47,132 +47,132 @@ let daftarPengikut = [{
 },
 {
   'nomorUrut': 10,
-  'pembaca': ' Rusmia - Jakarta',
+  'pembaca': 'Rusmia - Jakarta',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 11,
-  'pembaca': ' Dewi - Jakarta',
+  'pembaca': 'Dewi - Jakarta',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 12,
-  'pembaca': ' Kanti - Tangerang',
+  'pembaca': 'Kanti - Tangerang',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 13,
-  'pembaca': ' Ellen Jacobs - Ambon',
+  'pembaca': 'Ellen Jacobs - Ambon',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 14,
-  'pembaca': ' Martha Tan - Banjarnegara ',
+  'pembaca': 'Martha Tan - Banjarnegara ',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 15,
-  'pembaca': ' Nanik FA - Salatiga',
+  'pembaca': 'Nanik FA - Salatiga',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 16,
-  'pembaca': ' Ronny Wisnhu - Jakarta',
+  'pembaca': 'Ronny Wisnhu - Jakarta',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 17,
-  'pembaca': ' Febby Kekado - Jonggol',
+  'pembaca': 'Febby Kekado - Jonggol',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 18,
-  'pembaca': ' Lisana Halim - Kediri',
+  'pembaca': 'Lisana Halim - Kediri',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 19,
-  'pembaca': ' Maria Sie - Sidoarjo',
+  'pembaca': 'Maria Sie - Sidoarjo',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 20,
-  'pembaca': ' Lasta - Bekasi',
+  'pembaca': 'Lasta - Bekasi',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 21,
-  'pembaca': ' Magdalena Yuniarini - Palangkaraya',
+  'pembaca': 'Magdalena Yuniarini - Palangkaraya',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 22,
-  'pembaca': ' Debora Kiem - Mojokerto',
+  'pembaca': 'Debora Kiem - Mojokerto',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 23,
-  'pembaca': ' Jeanne Gunawan - Tangerang ',
+  'pembaca': 'Jeanne Gunawan - Tangerang ',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 24,
-  'pembaca': ' Olyvia - Yogyakarta',
+  'pembaca': 'Olyvia - Yogyakarta',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 25,
-  'pembaca': ' Jenny - Yogyakarta',
+  'pembaca': 'Jenny - Yogyakarta',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 26,
-  'pembaca': ' Asthree Ratna - Bandung',
+  'pembaca': 'Asthree Ratna - Bandung',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 27,
-  'pembaca': ' Nessy Napitupulu - Jakarta',
+  'pembaca': 'Nessy Napitupulu - Jakarta',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 28,
-  'pembaca': ' Amanda Dellania Mongkar - Jakarta',
+  'pembaca': 'Amanda Dellania Mongkar - Jakarta',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 29,
-  'pembaca': ' Ester K - Jakarta',
+  'pembaca': 'Ester K - Jakarta',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 30,
-  'pembaca': ' Rosdina Sipayung - Bekasi',
+  'pembaca': 'Rosdina Sipayung - Bekasi',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 32,
-  'pembaca': ' Ria Pendjol - Emmen',
+  'pembaca': 'Ria Pendjol - Emmen',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 33,
-  'pembaca': ' Lili Diana - Bandung',
+  'pembaca': 'Lili Diana - Bandung',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 34,
-  'pembaca': ' Immanuel - Bandung',
+  'pembaca': 'Immanuel - Bandung',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 35,
-  'pembaca': ' Daniel - Bandung',
+  'pembaca': 'Daniel - Bandung',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 36,
-  'pembaca': ' Petriana - Jakarta',
+  'pembaca': 'Petriana - Jakarta',
   'apakahSudahMembaca': '',
 },
 ]
@@ -457,7 +457,7 @@ function hasilkanParagrafRekap () {
   let status = document.querySelector('#status-rekap').value
 
   for (var i = 0; i < daftarPengikut.length; i++) {
-    paragrafTengah += ((i+1) !== daftarPengikut.length) ? `${daftarPengikut[i].nomorUrut}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}\n` : `${daftarPengikut[i].nomorUrut}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}`
+    paragrafTengah += ((i+1) !== daftarPengikut.length) ? `${("0" + daftarPengikut[i].nomorUrut).slice(-2)}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}\n` : `${daftarPengikut[i].nomorUrut}. ${daftarPengikut[i].pembaca} ${daftarPengikut[i].apakahSudahMembaca}`
   }
 
   let rekapStr = `"""REKAP ${status}"""
