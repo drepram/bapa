@@ -2,339 +2,179 @@ window.jumlahPembaca = 0
 
 let daftarPengikut = [{
   'nomorUrut': 1,
-  'pembaca': 'Mercy Sihombing - Jakarta',
-  'apakahSudahMembaca': '✅'
+  'pembaca': 'Mercy - Jakarta',
+  'apakahSudahMembaca': '✅',
 },
 {
   'nomorUrut': 2,
-  'pembaca': 'Christie Kirana - Beijing RRT',
-  'apakahSudahMembaca': '✅'
+  'pembaca': 'Christie - Jakarta',
+  'apakahSudahMembaca': '✅',
 },
 {
   'nomorUrut': 3,
-  'pembaca': 'Andre Pramaditya - Jakarta',
-  'apakahSudahMembaca': '✅'
+  'pembaca': 'Andre - Jakarta',
+  'apakahSudahMembaca': '✅',
 },
 {
   'nomorUrut': 4,
-  'pembaca': 'Kanti - Tangerang',
-  'apakahSudahMembaca': ''
+  'pembaca': 'Yohan - Mojokerto',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 5,
-  'pembaca': 'Ronny Wisnhu - Jakarta',
-  'apakahSudahMembaca': ''
+  'pembaca': 'Hermanto R. - Tangerang',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 6,
-  'pembaca': 'Siu Shia - Jakarta',
-  'apakahSudahMembaca': ''
+  'pembaca': 'Yunita S - Banjarnegara',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 7,
-  'pembaca': 'Ria Pendjol - Emmen',
-  'apakahSudahMembaca': ''
+  'pembaca': 'Siu Shia - Jakarta',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 8,
-  'pembaca': 'Irina Pendjol - Bekasi',
-  'apakahSudahMembaca': ''
+  'pembaca': 'Irene F Mongkar - Tangerang',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 9,
-  'pembaca': 'Magdalena Y - Palangkaraya',
-  'apakahSudahMembaca': ''
+  'pembaca': 'Anik Handayani - Jakarta',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 10,
-  'pembaca': 'Lidya Eng - Villa Mutiara Lido',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Rusmia - Jakarta',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 11,
-  'pembaca': 'Ming Kolasa - Jakarta',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Dewi - Jakarta',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 12,
-  'pembaca': 'Martha Tan - Banjarnegara',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Kanti - Tangerang',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 13,
-  'pembaca': 'Maria Sie - Sidoarjo',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Ellen Jacobs - Ambon',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 14,
-  'pembaca': 'Jenny Tambunan - Jakarta',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Martha Tan - Banjarnegara ',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 15,
-  'pembaca': 'Lisana Halim - Kediri',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Nanik FA - Salatiga',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 16,
-  'pembaca': 'Yohan - Mojokerto',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Ronny Wisnhu - Jakarta',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 17,
-  'pembaca': 'Lili Diana - Bandung',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Febby Kekado - Jonggol',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 18,
-  'pembaca': 'Angel Ginelly - Greenpark',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Lisana Halim - Kediri',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 19,
-  'pembaca': 'Lorentz Marpaung - Balikpapan',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Maria Sie - Sidoarjo',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 20,
-  'pembaca': 'Louise - Bandung',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Lasta - Bekasi',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 21,
-  'pembaca': 'Lasta - Bekasi',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Magdalena Yuniarini - Palangkaraya',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 22,
-  'pembaca': 'Regina - Bekasi',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Debora Kiem - Mojokerto',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 23,
-  'pembaca': 'Irene Sirait - Jakarta',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Jeanne Gunawan - Tangerang ',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 24,
-  'pembaca': 'Cindra - Jakarta',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Olyvia - Yogyakarta',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 25,
-  'pembaca': 'Lily Mutiara - Gombong',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Jenny - Yogyakarta',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 26,
-  'pembaca': 'Lila - Martapura',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Asthree Ratna - Bandung',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 27,
-  'pembaca': 'Hermanto R - Tangerang',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Nessy Napitupulu - Jakarta',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 28,
-  'pembaca': 'Raymond - Ambon',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Amanda Dellania Mongkar - Jakarta',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 29,
-  'pembaca': 'Yasama Halawa - Bangka',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Ester K - Jakarta',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 30,
-  'pembaca': 'Dame - Binjai',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 31,
-  'pembaca': 'Yunita Suyanto - Banjarnegara',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Rosdina Sipayung - Bekasi',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 32,
-  'pembaca': 'Rusmida - Sumatera Utara',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Ria Pendjol - Emmen',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 33,
-  'pembaca': 'Miming - Gombong',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Lili Diana - Bandung',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 34,
-  'pembaca': 'Livia - Palembang',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Immanuel - Bandung',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 35,
-  'pembaca': 'Atik - Gombong',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Daniel - Bandung',
+  'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 36,
-  'pembaca': 'Bukit - Lido',
-  'apakahSudahMembaca': ''
+  'pembaca': ' Petriana - Jakarta',
+  'apakahSudahMembaca': '',
 },
-{
-  'nomorUrut': 37,
-  'pembaca': 'Sandra Ticoalu - Manado',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 38,
-  'pembaca': 'Jenny - Yogyakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 39,
-  'pembaca': 'Elisabeth Eliviana Andrians - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 40,
-  'pembaca': 'Sahadi Widjaja - Banten',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 41,
-  'pembaca': 'Dewi - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 42,
-  'pembaca': 'Anik - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 43,
-  'pembaca': 'Nessy Napitupulu - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 44,
-  'pembaca': 'Irene F Mongkar - Tangerang',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 45,
-  'pembaca': 'Wilken Paskalis - Jakarta Utara',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 46,
-  'pembaca': 'Olyvia - Yogyakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 47,
-  'pembaca': 'Rusmia - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 48,
-  'pembaca': 'Elisha - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 49,
-  'pembaca': 'Dedi L. Sihite - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 50,
-  'pembaca': 'Eveline - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 51,
-  'pembaca': 'Akoe Tonsi (Tonny) - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 52,
-  'pembaca': 'Ester K - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 53,
-  'pembaca': 'Debora Kiem - Mojokerto',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 54,
-  'pembaca': 'Lucy P.M. - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 55,
-  'pembaca': 'Ardiyanto - Jakarta',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 56,
-  'pembaca': 'Ellen Jacobs - Ambon',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 57,
-  'pembaca': 'Esther Hastuti - Solo',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 58,
-  'pembaca': 'Elizur Telaumbanua - Sampit',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 59,
-  'pembaca': 'Febby Kekado - Jonggol',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 60,
-  'pembaca': 'Evi Silalahi - Depok',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 61,
-  'pembaca': 'Natalicia - Lido Bogor',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 62,
-  'pembaca': 'Yusak Siswanto - Tangerang',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 63,
-  'pembaca': 'Rosdina Sipayung - Bekasi',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 64,
-  'pembaca': 'Indriana - Gombong',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 65,
-  'pembaca': 'Jeanne Gunawan - Tangerang',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 66,
-  'pembaca': 'Corrie - Gombong',
-  'apakahSudahMembaca': ''
-},
-{
-  'nomorUrut': 67,
-  'pembaca': 'Yoel - Gombong',
-  'apakahSudahMembaca': ''
-}
 ]
 
 const pasalHarian = {
