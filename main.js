@@ -151,6 +151,11 @@ let daftarPengikut = [{
   'apakahSudahMembaca': '',
 },
 {
+  'nomorUrut': 31,
+  'pembaca': 'Jenny Tambunan - Jakarta',
+  'apakahSudahMembaca': '',
+},
+{
   'nomorUrut': 32,
   'pembaca': 'Ria Pendjol - Emmen',
   'apakahSudahMembaca': '',
@@ -173,6 +178,26 @@ let daftarPengikut = [{
 {
   'nomorUrut': 36,
   'pembaca': 'Petriana - Jakarta',
+  'apakahSudahMembaca': '',
+},
+{
+  'nomorUrut': 37,
+  'pembaca': 'Lidya - Lido',
+  'apakahSudahMembaca': '',
+},
+{
+  'nomorUrut': 38,
+  'pembaca': 'Dedi L. Sihite - Jakarta',
+  'apakahSudahMembaca': '',
+},
+{
+  'nomorUrut': 39,
+  'pembaca': 'Martha Tan - Banjarnegara',
+  'apakahSudahMembaca': '',
+},
+{
+  'nomorUrut': 40,
+  'pembaca': 'Fransiska - Jakarta',
   'apakahSudahMembaca': '',
 },
 ]
@@ -467,7 +492,7 @@ function hasilkanParagrafRekap () {
 🗓: ${tanggal}
 📖: ✅ ${ayat}
 
-*Gerakan BAPA cq BATYK Putaran Ke-4*
+*Gerakan BAPA cq BATYK Putaran Ke-5*
 *Baca Alkitab (bersama) Tuhan Yesus Kristus*
 
 Sobat BAPA yang sudah membaca 5 pasal hari ini: 
