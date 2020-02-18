@@ -192,12 +192,17 @@ let daftarPengikut = [{
 },
 {
   'nomorUrut': 39,
-  'pembaca': 'Martha Tan - Banjarnegara',
+  'pembaca': 'Ming Kolasa - Jakarta',
   'apakahSudahMembaca': '',
 },
 {
   'nomorUrut': 40,
   'pembaca': 'Fransiska - Jakarta',
+  'apakahSudahMembaca': '',
+},
+{
+  'nomorUrut': 41,
+  'pembaca': 'Olwin Silalahi - Depok',
   'apakahSudahMembaca': '',
 },
 ]
