@@ -695,8 +695,8 @@ function dapatkanHariKemarin () {
 
   let hari = hariHari[waktu.getDay() == 0 ? 6 : waktu.getDay() - 1] // Mengambil satu hari dari hari-hari, jika index di array hariHari adalah 0, kembalikan ke index 6 karena 0-1 = undefined
   let tanggal = moment().tz('Asia/Jakarta').subtract(1, 'day').format('D')
-  let bulan = bulanBulan[waktu.getMonth()] // Mengambil satu bulan dari bulan-bulan
-  let tahun = waktu.getFullYear()
+  let bulan = bulanBulan[parseInt(moment().tz('Asia/Jakarta').subtract(1, 'day').format('M')) - 1] // Mengambil satu bulan dari bulan-bulan. Di array Januari = 0, tapi di Moment.js Januari = 1, maka data Moment.js harus kita kurangi 1 angka
+  let tahun = moment().tz('Asia/Jakarta').subtract(1, 'day').format('YYYY')
 
   document.querySelector('#waktu-hari-tanggal').value = `${hari}, ${tanggal} ${bulan} ${tahun}`
   document.querySelector('#waktu-jam-menit').value = `${jamDanMenit}`
