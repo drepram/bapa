@@ -1,5 +1,7 @@
 # bapa
 
+> A work-in-progress: VanillaJS Clipboard API doesn't work well with WhatsApp.
+
 My mom runs a WhatsApp group where a bunch of people report their reading progress on their bible, daily. These reports will then be gathered into a large message where it will show people's name and their reading status.
 
 Since I was tired of doing it manually, I created a tool for it. _With the help of JavaScript_, the task that once took 15 mins could just be 30 seconds. **An automated world is lovely**.
