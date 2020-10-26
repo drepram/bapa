@@ -17,4 +17,4 @@ You can see the old CLI app in the `nodejs` branch.
 
 ## license
 
-MIT © <a href="https://drepram.now.sh">Andre Christoga Pramaditya</a>
+[MIT](https://opensource.org/licenses/MIT) © <a href="https://drepram.now.sh">Andre Christoga Pramaditya</a>
