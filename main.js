@@ -195,6 +195,11 @@ let daftarPengikut = [{
   'pembaca': 'Ny. Pela Harianja, Jakarta',
   'apakahSudahMembaca': '',
 },
+{
+  'nomorUrut': 40,
+  'pembaca': 'Calleshia Yohanes, Semarang',
+  'apakahSudahMembaca': '',
+},
 ]
 
 const pasalHarian = {
