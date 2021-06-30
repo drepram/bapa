@@ -523,7 +523,7 @@ function hasilkanParagrafRekap () {
 🗓: ${tanggal}
 📖: ✅ ${ayat}
 
-*Gerakan BAPA cq BATYK Putaran Ke-6*
+*Gerakan BAPA cq BATYK Putaran Ke-7*
 *Baca Alkitab (bersama) Tuhan Yesus Kristus*
 
 Sobat BAPA yang sudah membaca 5 pasal hari ini: 
