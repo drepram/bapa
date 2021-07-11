@@ -209,7 +209,7 @@ let daftarPengikut = [
   {
     'nomorUrut': 42,
     'pembaca': 'Jevon Christian - Jakarta',
-    'apakahSudahMembaca': ''
+    'apakahSudahMembaca': '✅'
   },
   {
     'nomorUrut': 43,
