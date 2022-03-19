@@ -52,7 +52,7 @@ let daftarPengikut = [{nomorUrut: 1,
   pembaca: 'Lisana Halim - 51 - Kediri',
   apakahSudahMembaca: ''},
   {nomorUrut: 18,
-  pembaca: 'Martha Tan - 62- Banjarnegara',
+  pembaca: 'Martha Tan - 62 - Banjarnegara',
   apakahSudahMembaca: ''},
   {nomorUrut: 19,
   pembaca: 'Olwin Lepiana Silalahi - 52 - Depok',
@@ -92,6 +92,9 @@ let daftarPengikut = [{nomorUrut: 1,
   apakahSudahMembaca: ''},
   {nomorUrut: 31,
   pembaca: 'Ribka Ginting - 49 - Medan',
+  apakahSudahMembaca: ''},
+  {nomorUrut: 33,
+  pembaca: 'Broer Efkay - 66 - Bogor',
   apakahSudahMembaca: ''}]
 
 const pasalHarian = {
