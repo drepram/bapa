@@ -95,6 +95,9 @@ let daftarPengikut = [{nomorUrut: 1,
   apakahSudahMembaca: ''},
   {nomorUrut: 33,
   pembaca: 'Broer Efkay - 66 - Bogor',
+  apakahSudahMembaca: ''},
+  {nomorUrut: 34,
+  pembaca: 'Tioarta Simatupang - 29 - Sibolga',
   apakahSudahMembaca: ''}]
 
 const pasalHarian = {
